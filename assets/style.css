@@ -1,0 +1,115 @@
+:root{
+  --link-color:#DBA925;
+  --section-padding: 70px 100px;
+  --icon-space: 1.3em;
+}
+
+body{
+  padding: 0; margin: 0;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+}
+
+.logo{
+  display: flex;
+}
+.links a{
+  margin: 0 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.services{
+  display: flex;
+}
+
+.btn{
+  /* border: 2px solid var(--link-color); */
+  /* color: white; */
+  padding: 10px;  
+}
+
+nav{
+  padding: 10px 60px;
+}
+
+section{
+  padding: 60px 120px;
+}
+
+.section-relative{
+  position: relative; 
+  display: flex;
+  /* padding: 20px;  */
+}
+
+.section-absolute::before {
+  content: '';
+  background: #c93b3b;
+  border-radius: 0 100px 100px 0;
+  width: 50%; height: 60%;
+  opacity: .2;
+  position: absolute;
+  left: -15px;
+}
+
+.section-absolute{
+  background: #eae8e8;
+  z-index: 100;
+  border-radius: 25px 15px 5px 15px / 5px 15px 5px 15px;
+  padding: 40px;
+  opacity: .7;
+  width: 60%;
+}
+
+.section-absolute::after {
+  content: '';
+  background: #c93b3b;
+  border-radius: 0 100px 100px 100px;
+  width: 30%; height: 60%;
+  opacity: .2;
+  position: absolute;
+  /* left: 15px; */
+}
+
+.section-relative ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-relative li {
+  padding-left: var(--icon-space);
+
+}
+
+.section-relative li:before {
+  content: "\F26A";
+  /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: calc(var(--icon-space) * -1);
+  width: var(--icon-space);
+}
+
+@media screen and  (max-width:768px) {
+  
+  nav .links a{
+    display: none;
+  }
+
+  .section-absolute{
+    width: 100%;
+    height: 30%;
+  }
+
+  .section-trailing img{
+    left: 0;
+    max-width: 150%; 
+     /* position: absolute;  */
+     overflow-x: hidden;
+  }
+}
