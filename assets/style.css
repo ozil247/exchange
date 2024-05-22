@@ -54,13 +54,15 @@ body {
   padding-left: 1rem !important;
 }
 .effortless ul li{
-  position: relative; 
-  left: 3px;
+  /* position: relative;  */
+  left: 1px;
+  margin: 15px 0;
+
 }
 
 .effortless ul li::before {
   content: url(images/business-solution/vuesax/bold/verify.png);
-  position: absolute;
+  /* position: absolute; */
   left: -0.8em;
   /* Adjust this value so that it appears where you want. */
   font-size: 1.1em;
@@ -183,8 +185,9 @@ span{
 
 /* ......//about us//...... */
 
-.about {
+section {
   padding: 50px 0;
+  align-items: center;
   background: #f5f5f7;
   height: 900px;
 }
@@ -257,7 +260,9 @@ p, li{
   padding: 5px 0;
   font-weight: 200;
 }
-
+.services{
+  padding: 25px 10px;
+}
 .services h2{
   text-align: center;
   padding: 0 10px;
@@ -270,6 +275,10 @@ p, li{
   padding: 5px 100px;
 }
 
+.services .card{
+  height: 627px;
+  margin: 25px;
+}
 .services .card-body{
   padding: 50px;
   text-align: center;
