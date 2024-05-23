@@ -259,16 +259,16 @@ p, li{
   padding: 5px 0;
   font-weight: 200;
 }
-.services{
+.services-we-offer-we-offer{
   padding: 25px 70px;
   height: 1156px;
 }
 
-.services .hero-wrapper{
+.services-we-offer .hero-wrapper{
   padding: 0 150px;
 }
 
-.services h2{
+.services-we-offer h2{
   text-align: center;
   padding: 0 10px;
   margin: 50px 0;
@@ -277,11 +277,11 @@ p, li{
   align-items: center !important; */
 }
 
-.services .card{
+.services-we-offer .card{
   height: auto;
   margin: 25px;
 }
-.services .card-body{
+.services-we-offer .card-body{
   padding: 50px;
   text-align: center;
 }
@@ -292,9 +292,45 @@ p, li{
    justify-content: center;
 }
 
-.transactions-text{
-  padding: 40px 0; 
-  align-content: center;
+.transaction-text{
+  padding: 40px 0 !important; 
+  align-content: center !important;
+  justify-content: center !important;
+}
+
+.perfect-transactions .paypal{
+  border: #0070BA 2px solid;
+  color: #0070BA;
+}
+
+.perfect-transactions .perfect-money {
+  border: #D60303 2px solid;
+  color: #D60303;
+}
+
+.perfect-transactions .skrill {
+  border: #862165 2px solid;
+  color: #862165;
+}
+
+.perfect-transactions .payoneer {
+  border: #F07B0E 2px solid;
+  color: #F07B0E;
+}
+
+.perfect-transactions .cryptocurrency {
+  border: #DBA925 2px solid;
+  color: #DBA925;
+}
+
+.perfect-transactions .bank-transfer {
+  border: #DBA925 2px solid;
+  color: #DBA925;
+}
+
+.transactions-card{
+  height: 290px !important;
+  align-items: center;
   justify-content: center;
 }
 
@@ -504,19 +540,20 @@ p, li{
     ;
   }
 
-  .services .card{
+  .services-we-offer .card{
     height:auto;
   }
   section{
     position: static;
   }
 
+  
   .effortless {
     margin-left: auto;
   }
 
-  .services,
-  .services .hero-wrapper{
+  .services-we-offer,
+  .services-we-offer .hero-wrapper{
     padding: 10px !important;
   }
 
@@ -653,6 +690,7 @@ p, li{
     flex-direction: column;
     text-align: center;
   }
+
 
   .food-menu-container img {
     margin: auto;
