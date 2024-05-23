@@ -7,12 +7,10 @@
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   padding: 0;
   margin: 0;
   text-decoration: none;
-  
-  /* font-family: po; */
 }
 
 .html {
@@ -31,6 +29,11 @@ body {
   max-width: 1200px;
   width: 90%;
   margin: auto;
+}
+
+.faqs-main{
+  align-content: center;
+  justify-content: center;
 }
 
 .transactions-card{
@@ -57,7 +60,7 @@ body {
   height: 835px;
 }
 
-.effortless ul{
+ul{
   list-style: none;
   padding-left: 1rem !important;
 }
@@ -162,29 +165,36 @@ span{
   /* margin-bottom: 0.5rem; */
 }
 
-.about-paragraph{
+.hero-paragraph{
   margin: 10px 0;
 }
 
 
 
 section {
-  padding: 50px 0;
-  /* align-items: center; */
+  padding: 0 50px !important;
+  align-content: center !important;
+  justify-content: center !important;
   background: #f5f5f7;
   /* height: 900px; */
 }
 
-.about-page{
+/* .hero-page{
   padding: 0 40px;
+  align-content: center;
+  justify-content: center;
 }
 
-.about-wrapper {
+.hero-page .hero{
+
+} */
+
+.hero-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 
-.about-text{
+.hero-text{
   display: flex;
   flex-direction: column;
   line-height: auto;
@@ -200,7 +210,7 @@ h2 {
 }
 
 .effortless li,
-.about p {
+.hero p {
   font-size: 20px;
   /* font-weight: bold; */
   align-items: left;
@@ -208,21 +218,23 @@ h2 {
   word-spacing: 10px;
 }
 
-.about .small {
+.hero .small {
   font-size: 1.2rem;
   color: #666;
   font-weight: 600;
 }
 
-.about-img img{
+.hero-img img{
   width: 466px;
 }
 
-.about-img {
+.hero-img {
   flex: 2 1 200px;
   /* height: max-content;   */
   transform: translateX(150%);
   animation: about-img-animation 1s ease-in-out forwards;
+  align-content: center;
+  justify-content: center;
 }
 
 @keyframes about-img-animation {
@@ -231,7 +243,7 @@ h2 {
   }
 }
 
-.about-text {
+.hero-text {
   flex: 1 1 400px;
   padding: 30px;
   margin: auto;
@@ -252,7 +264,7 @@ p, li{
   height: 1156px;
 }
 
-.services .about-wrapper{
+.services .hero-wrapper{
   padding: 0 150px;
 }
 
@@ -266,7 +278,7 @@ p, li{
 }
 
 .services .card{
-  height: 700px;
+  height: auto;
   margin: 25px;
 }
 .services .card-body{
@@ -275,12 +287,15 @@ p, li{
 }
 
 .perfect-transactions{
-  padding: 40px;
+  padding: 0 50px;
+   align-content: center;
+   justify-content: center;
 }
 
 .transactions-text{
-  align-items: center;
-  justify-items: center;
+  padding: 40px 0; 
+  align-content: center;
+  justify-content: center;
 }
 
 @keyframes about-text-animation {
@@ -289,7 +304,7 @@ p, li{
   }
 }
 
-.about-img img {
+.hero-img img {
   display: block;
   height: 400px;
   max-width: 100%;
@@ -501,7 +516,7 @@ p, li{
   }
 
   .services,
-  .services .about-wrapper{
+  .services .hero-wrapper{
     padding: 10px !important;
   }
 
