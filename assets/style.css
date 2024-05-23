@@ -33,6 +33,14 @@ body {
   margin: auto;
 }
 
+.transactions-card{
+  height: 290px; width: 341;
+  align-items: center ;
+  justify-items: center;
+  padding: 40px;
+  margin-bottom: 20px;
+} 
+
 .btn {
   display: inline-block;
   padding: 0.5em 1.5em;
@@ -46,7 +54,7 @@ body {
 }
 
 .effort{
-  height: 835px !important;
+  height: 835px;
 }
 
 .effortless ul{
@@ -157,39 +165,14 @@ span{
 .about-paragraph{
   margin: 10px 0;
 }
-/* ............//// Showcase styling ////......... */
 
-.showcase-area {
-  height: 50vh;
-  background: linear-gradient(rgba(240, 240, 240, 0.144),
-      rgba(255, 255, 255, 0.336)),
-    url("https://i.postimg.cc/wT3TQS3V/header-image2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
-.showcase-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  font-size: 1.6rem;
-}
-
-.main-title {
-  text-transform: uppercase;
-  margin-top: 1.5em;
-}
-
-/* ......//about us//...... */
 
 section {
   padding: 50px 0;
-  align-items: center;
+  /* align-items: center; */
   background: #f5f5f7;
-  height: 900px;
+  /* height: 900px; */
 }
 
 .about-page{
@@ -265,8 +248,14 @@ p, li{
   font-weight: 200;
 }
 .services{
-  padding: 25px 10px;
+  padding: 25px 70px;
+  height: 1156px;
 }
+
+.services .about-wrapper{
+  padding: 0 150px;
+}
+
 .services h2{
   text-align: center;
   padding: 0 10px;
@@ -275,17 +264,23 @@ p, li{
   justify-content: center !important;
   align-items: center !important; */
 }
-.section-2{
-  padding: 5px 100px;
-}
 
 .services .card{
-  height: 627px;
+  height: 700px;
   margin: 25px;
 }
 .services .card-body{
   padding: 50px;
   text-align: center;
+}
+
+.perfect-transactions{
+  padding: 40px;
+}
+
+.transactions-text{
+  align-items: center;
+  justify-items: center;
 }
 
 @keyframes about-text-animation {
@@ -305,32 +300,6 @@ p, li{
 
 /* ..........////Food category///........... */
 
-#food {
-  padding: 5rem 0 10rem 0;
-}
-
-#food h2 {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 100;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  color: #555;
-}
-
-.food-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.food-container img {
-  display: block;
-  width: 100%;
-  margin: auto;
-  max-height: 300px;
-  object-fit: cover;
-  object-position: center;
-}
 
 .img-container {
   margin: 0 1rem;
@@ -386,57 +355,6 @@ p, li{
 
 /* .........../Food Menu/............ */
 
-.food-menu-heading {
-  text-align: center;
-  font-size: 3.4rem;
-  font-weight: 400;
-  color: #666;
-}
-
-.food-menu-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px 0px 30px 0px;
-}
-
-.food-menu-container img {
-  display: block;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.food-menu-item {
-  display: flex;
-  flex: 1 1 600px;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
-}
-
-.food-description {
-  margin: auto 1.5rem;
-}
-
-.font-title {
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: #444;
-}
-
-.food-description p {
-  font-size: 1.4rem;
-  color: #555;
-  font-weight: 500;
-}
-
-.food-description .food-price {
-  color: #117964;
-  font-weight: 700;
-}
-
-/* ........./ Testimonial /.......... */
 
 #testimonials {
   padding: 5rem 0;
@@ -563,8 +481,28 @@ p, li{
     opacity: 0.95;
   }
 
+  body {
+    overflow: auto;
+    height: 100%;
+    font-size: 81.44%
+      /* change if needed */
+    ;
+  }
+
+  .services .card{
+    height:auto;
+  }
+  section{
+    position: static;
+  }
+
   .effortless {
     margin-left: auto;
+  }
+
+  .services,
+  .services .about-wrapper{
+    padding: 10px !important;
   }
 
   .navbar-container input[type="checkbox"],
