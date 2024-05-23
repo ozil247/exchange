@@ -171,8 +171,8 @@ span{
 
 
 
-section {
-  padding: 0 50px !important;
+section{
+  padding: 0 70px !important;
   align-content: center !important;
   justify-content: center !important;
   background: #f5f5f7;
@@ -260,7 +260,7 @@ p, li{
   font-weight: 200;
 }
 .services-we-offer-we-offer{
-  padding: 25px 70px;
+  padding: 25px 0;
   height: 1156px;
 }
 
@@ -287,7 +287,7 @@ p, li{
 }
 
 .perfect-transactions{
-  padding: 0 50px;
+  /* padding: 0 50px; */
    align-content: center;
    justify-content: center;
 }
@@ -332,6 +332,17 @@ p, li{
   height: 290px !important;
   align-items: center;
   justify-content: center;
+}
+
+.made-easy .col-md-4{
+  align-items: center;
+  justify-items: center;
+  padding: 0 30px;
+
+}
+
+.made-easy .col-md-4 .card{
+  height: 385px;
 }
 
 @keyframes about-text-animation {
