@@ -338,11 +338,40 @@ p, li{
   align-items: center;
   justify-items: center;
   padding: 0 30px;
-
 }
 
+ .arrow-left {
+   position: absolute;
+ }
+
+ .arrow-right {
+   position: absolute;
+   right: 0;
+ }
+
+ .testimonial{
+   position: relative;
+   align-content: center;
+   justify-content: center;
+ }
+
+ .testimonial-container {
+   flex-direction: column;
+   text-align: center;
+   height: 549px;
+   padding: 20px 0;
+ }
+
+.register{
+  align-content: center;
+  justify-content: center;
+}
+
+.register .card{
+  height: 1324px;
+}
 .made-easy .col-md-4 .card{
-  height: 385px;
+  height: 385px !important;
 }
 
 @keyframes about-text-animation {
@@ -418,9 +447,9 @@ p, li{
 /* .........../Food Menu/............ */
 
 
-#testimonials {
+.testimonials {
   padding: 5rem 0;
-  background: rgba(243, 243, 243);
+  background: #000000;
 }
 
 .testimonial-title {
@@ -433,6 +462,8 @@ p, li{
 .testimonial-container {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   font-size: 1.4rem;
   padding: 1rem;
 }
@@ -558,6 +589,17 @@ p, li{
     position: static;
   }
 
+  .btn-primary{
+  width: 32px;
+  height: 10px;
+  padding: 0.5em 1.1em !important;
+  }
+
+  .btn-primary-outline{
+    width: 42px;
+    height: 10px;
+    padding: 0.5em 1.1em !important;
+  }
   
   .effortless {
     margin-left: auto;
@@ -697,11 +739,9 @@ p, li{
     font-size: 1.6rem;
   }
 
-  .testimonial-container {
-    flex-direction: column;
-    text-align: center;
+  .detail h5{
+    border-right: #fff 4px solid;
   }
-
 
   .food-menu-container img {
     margin: auto;
