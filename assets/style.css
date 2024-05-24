@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-::root{
+::root {
   --root-color: #DBA925;
 }
 
@@ -31,18 +31,19 @@ body {
   margin: auto;
 }
 
-.faqs-main{
+.faqs-main {
   align-content: center;
   justify-content: center;
 }
 
-.transactions-card{
-  height: 290px; width: 341;
-  align-items: center ;
+.transactions-card {
+  height: 290px;
+  width: 341;
+  align-items: center;
   justify-items: center;
   padding: 40px;
   margin-bottom: 20px;
-} 
+}
 
 .btn {
   display: inline-block;
@@ -56,15 +57,16 @@ body {
   font-weight: small;
 }
 
-.effort{
+.effort {
   height: 835px;
 }
 
-ul{
+ul {
   list-style: none;
   padding-left: 1rem !important;
 }
-.effortless ul li{
+
+.effortless ul li {
   /* position: relative;  */
   left: 1px;
   margin: 15px 0;
@@ -95,7 +97,8 @@ ul{
   background: #F2D641;
   text-decoration: none;
   border-radius: 5px;
-  width: 132px; height: 42px;
+  width: 132px;
+  height: 42px;
   padding: 0.5em 1.5em;
 }
 
@@ -104,9 +107,10 @@ ul{
   transition: background 0.3s ease-in-out;
 }
 
-span{
+span {
   border-bottom: 10px solid #F2D641;
 }
+
 /* ............/navbar/............ *
 
 /* desktop mode............/// */
@@ -165,13 +169,13 @@ span{
   /* margin-bottom: 0.5rem; */
 }
 
-.hero-paragraph{
+.hero-paragraph {
   margin: 10px 0;
 }
 
 
 
-section{
+section {
   padding: 0 70px !important;
   align-content: center !important;
   justify-content: center !important;
@@ -194,7 +198,7 @@ section{
   flex-wrap: wrap;
 }
 
-.hero-text{
+.hero-text {
   display: flex;
   flex-direction: column;
   line-height: auto;
@@ -224,7 +228,7 @@ h2 {
   font-weight: 600;
 }
 
-.hero-img img{
+.hero-img img {
   width: 466px;
 }
 
@@ -251,24 +255,26 @@ h2 {
   animation: about-text-animation 1s ease-in-out forwards;
 }
 
-.effortless{
+.effortless {
   margin-left: 50px;
 }
 
-p, li{
+p,
+li {
   padding: 5px 0;
   font-weight: 200;
 }
-.services-we-offer-we-offer{
+
+.services-we-offer-we-offer {
   padding: 25px 0;
   height: 1156px;
 }
 
-.services-we-offer .hero-wrapper{
+.services-we-offer .hero-wrapper {
   padding: 0 150px;
 }
 
-.services-we-offer h2{
+.services-we-offer h2 {
   text-align: center;
   padding: 0 10px;
   margin: 50px 0;
@@ -277,28 +283,29 @@ p, li{
   align-items: center !important; */
 }
 
-.services-we-offer .card{
+.services-we-offer .card {
   height: auto;
   margin: 25px;
 }
-.services-we-offer .card-body{
+
+.services-we-offer .card-body {
   padding: 50px;
   text-align: center;
 }
 
-.perfect-transactions{
+.perfect-transactions {
   /* padding: 0 50px; */
-   align-content: center;
-   justify-content: center;
+  align-content: center;
+  justify-content: center;
 }
 
-.transaction-text{
-  padding: 40px 0 !important; 
+.transaction-text {
+  padding: 40px 0 !important;
   align-content: center !important;
   justify-content: center !important;
 }
 
-.perfect-transactions .paypal{
+.perfect-transactions .paypal {
   border: #0070BA 2px solid;
   color: #0070BA;
 }
@@ -328,49 +335,70 @@ p, li{
   color: #DBA925;
 }
 
-.transactions-card{
+.transactions-card {
   height: 290px !important;
   align-items: center;
   justify-content: center;
 }
 
-.made-easy .col-md-4{
+.made-easy{
+  height:1090px
+}
+
+.made-easy .col-md-4 {
   align-items: center;
   justify-items: center;
   padding: 0 30px;
 }
 
- .arrow-left {
-   position: absolute;
- }
+#arrow-left {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  bottom: 50%;
+}
 
- .arrow-right {
-   position: absolute;
-   right: 0;
- }
+#arrow-right {
+  position: absolute;
+  cursor: pointer;
+  /* pointer-events: none; */
+  right: 0;
+  bottom: 50%;
+  align-content: center;
+}
 
- .testimonial{
-   position: relative;
-   align-content: center;
-   justify-content: center;
- }
+.testimonials {
+  position: relative;
+  align-items: center;
+  justify-items: center; 
+}
 
- .testimonial-container {
-   flex-direction: column;
-   text-align: center;
-   height: 549px;
-   padding: 20px 0;
- }
-
-.register{
+.testimonial-container {
+  flex-direction: column;
   align-content: center;
   justify-content: center;
+  height: 549px;
+  width: 100%;
+  padding: 20px 0;
 }
 
-.register .card{
-  height: 1324px;
+.testimonial-container:not(.active){
+  display: none;
 }
-.made-easy .col-md-4 .card{
+
+.register {
+  /* : center; */
+  justify-content: center;
+  background: #000;
+}
+
+.register .card {
+  height: 600px;
+  align-content: center;
+  justify-content: stretch;
+}
+
+.made-easy .col-md-4 .card {
   height: 385px !important;
 }
 
@@ -444,7 +472,6 @@ p, li{
   top: 40%;
 }
 
-/* .........../Food Menu/............ */
 
 
 .testimonials {
@@ -461,7 +488,7 @@ p, li{
 
 .testimonial-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   font-size: 1.4rem;
@@ -492,80 +519,7 @@ p, li{
   margin: auto;
 }
 
-/* ........ Contact Us........... */
 
-#contact {
-  padding: 5rem 0;
-  background: rgb(226, 226, 226);
-}
-
-.contact-container {
-  display: flex;
-  background: #fff;
-}
-
-.contact-img {
-  width: 50%;
-}
-
-.contact-img img {
-  display: block;
-  height: 400px;
-  width: 100%;
-  object-position: center;
-  object-fit: cover;
-}
-
-.form-container {
-  padding: 1rem;
-  width: 50%;
-  margin: auto;
-}
-
-.form-container input {
-  display: block;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #ddd;
-  padding: 1rem 0;
-  box-shadow: none;
-  outline: none;
-  margin-bottom: 1rem;
-  color: #444;
-  font-weight: 500;
-}
-
-.form-container textarea {
-  display: block;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #ddd;
-  color: #444;
-  outline: none;
-  padding: 1rem 0;
-  resize: none;
-}
-
-.form-container h2 {
-  font-size: 2.7rem;
-  font-weight: 500;
-  color: #444;
-  margin-bottom: 1rem;
-  margin-top: -1.2rem;
-}
-
-.form-container a {
-  font-size: 1.3rem;
-}
-
-#footer h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  padding: 2.6rem;
-  font-weight: 500;
-  color: #fff;
-  background: rgb(65, 65, 65);
-}
 
 /* ......../ media query /.......... */
 
@@ -582,31 +536,32 @@ p, li{
     ;
   }
 
-  .services-we-offer .card{
-    height:auto;
+  .services-we-offer .card {
+    height: auto;
   }
-  section{
+
+  section {
     position: static;
   }
 
-  .btn-primary{
-  width: 32px;
-  height: 10px;
-  padding: 0.5em 1.1em !important;
+  .btn-primary {
+    width: 32px;
+    height: 10px;
+    padding: 0.5em 1.1em !important;
   }
 
-  .btn-primary-outline{
+  .btn-primary-outline {
     width: 42px;
     height: 10px;
     padding: 0.5em 1.1em !important;
   }
-  
+
   .effortless {
     margin-left: auto;
   }
 
   .services-we-offer,
-  .services-we-offer .hero-wrapper{
+  .services-we-offer .hero-wrapper {
     padding: 10px !important;
   }
 
@@ -739,7 +694,7 @@ p, li{
     font-size: 1.6rem;
   }
 
-  .detail h5{
+  .detail h5 {
     border-right: #fff 4px solid;
   }
 
