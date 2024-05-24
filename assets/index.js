@@ -31,9 +31,10 @@ $(document).ready(function () {
 const arrowRight = $("#arrow-right");
 arrowRight.on("click", function () {
   const testimonials = $(".testimonial-contents");
-  const children = testimonials.children();
-  const activeChild = children[0]
-  console.log(activeChild);
+  const theseChildren = testimonials.children(":first-child");
+  const active_child = theseChildren.props;
+  const next_child = theseChildren.next();
+  console.log(active_child);
 });
 
 // console.log('');
