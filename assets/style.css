@@ -392,6 +392,13 @@ footer{
   justify-content: flex-end;
 }
 
+
+footer h5, footer hr, footer .icons i{
+  color: #DBA925;
+  /* padding-bottom: 70px; */
+}
+
+
 footer .col-md-2{
   display: flex;
   flex-direction: column;
