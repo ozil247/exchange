@@ -173,7 +173,15 @@ span {
   margin: 10px 0;
 }
 
+.contacts{
+  height: 601px;
+}
 
+.contacts .col-md-3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 section {
   padding: 0 70px !important;
@@ -265,7 +273,7 @@ li {
   font-weight: 200;
 }
 
-.services-we-offer-we-offer {
+.services-we-offer {
   padding: 25px 0;
   height: 1156px;
 }
@@ -341,11 +349,12 @@ li {
   justify-content: center;
 }
 
-.made-easy{
-  height:1090px
+.made{
+  height:1090px;
+  padding:20px 0;
 }
 
-.made-easy .col-md-4 {
+.made .col-md-4 {
   align-items: center;
   justify-items: center;
   padding: 0 30px;
@@ -371,6 +380,22 @@ li {
   position: relative;
   align-items: center;
   justify-items: center; 
+}
+
+footer{
+  background: #000;
+  height: 400px;
+  padding: 0 70px 0 40px;
+  display: flex; 
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: flex-end;
+}
+
+footer .col-md-2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .testimonial-container {
@@ -400,8 +425,12 @@ li {
   justify-content: stretch;
 }
 
-.made-easy .col-md-4 .card {
-  height: 385px !important;
+.made .card {
+  height: 400px !important;
+}
+
+.made .col-md-4 .card img{
+  object-fit: cover !important; 
 }
 
 @keyframes about-text-animation {
@@ -474,18 +503,13 @@ li {
   top: 40%;
 }
 
+.testimonials-section{
+  background: #000000;
 
+}
 
 .testimonials {
   padding: 5rem 0;
-  background: #000000;
-}
-
-.testimonial-title {
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: 400;
-  color: #555;
 }
 
 .testimonial-container {
@@ -716,16 +740,6 @@ li {
 
   .form-container {
     width: 90%;
-  }
-
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contact-img {
-    width: 90%;
-    margin: 3rem auto;
   }
 
   .logo {
