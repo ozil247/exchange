@@ -28,13 +28,33 @@ $(document).ready(function () {
   });
 });
 
+$count = 1;
 const arrowRight = $("#arrow-right");
+const testimonials = $(".testimonial-contents");
+const theseChildren = testimonials.children();
+const testimonialArray = Array.from(theseChildren);
+const active_child = '';
+$counter = 0;
 arrowRight.on("click", function () {
-  const testimonials = $(".testimonial-contents");
-  const theseChildren = testimonials.children(":first-child");
-  const active_child = theseChildren.props;
-  const next_child = theseChildren.next();
-  console.log(active_child);
+  const prevChild = testimonialArray[$count - 1];
+  const active_child = testimonialArray[$count];
+  // const element = array[$count];
+  
+     prevChild.classList.remove('active');
+     active_child.classList.add('active');
+    $count++;
+  console.log(testimonialArray.length);
 });
 
-// console.log('');
+const arrowLeft = $("#arrow-left");
+arrowLeft.on("click", function () {
+  
+  const prevChild = testimonialArray[$count-1];
+  const active_child = testimonialArray[$count];
+
+    // const element = array[$count];
+    prevChild.classList.add('active');
+    active_child.classList.remove('active');    
+  $count--;
+   console.log($count);
+});

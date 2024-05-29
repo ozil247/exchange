@@ -398,6 +398,11 @@ footer h5, footer hr, footer .icons i{
   /* padding-bottom: 70px; */
 }
 
+footer .icons i{
+  width: 30px;
+  height: 30px;
+}
+
 
 footer .col-md-2{
   display: flex;
@@ -571,10 +576,11 @@ footer .col-md-2{
 
   .services-we-offer .card {
     height: auto;
+    border-radius: 10px;
   }
 
-  section {
-    position: static;
+  .services-we-offer .card:nth-child(1){
+    border-radius: 50px 10px 10px 20px;
   }
 
   .register .btn-primary{
