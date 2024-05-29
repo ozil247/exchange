@@ -425,16 +425,50 @@ footer .col-md-2{
 
 .register {
   /* : center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   background: #000;
   color: #DBA925;
   height: 100%;
 }
 
+.register input{
+  background: #C6C3C3;
+}
+
 .register .card {
-  height: auto;
+  height: 500px;
   align-content: center;
-  justify-content: stretch;
+}
+
+.register form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.contact-page{
+  background: #000;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-page h3{
+  color: #DBA925;
+}
+.contact-page form div{
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin-bottom: 24px;
+}
+
+.contact-page input, .contact-page textarea{
+  border: 1px solid #DBA925;
+  background: #000;
 }
 
 .made .card {
