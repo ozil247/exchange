@@ -108,7 +108,8 @@ ul {
 }
 
 span {
-  border-bottom: 10px solid #F2D641;
+  border-bottom: 5px solid #F2D641;
+  /* border-radius: 50%; */
 }
 
 /* ............/navbar/............ *
@@ -285,7 +286,7 @@ li {
 .services-we-offer h2 {
   text-align: center;
   padding: 0 10px;
-  margin: 50px 0;
+  margin: 5px 0;
   /* display: flex;
   justify-content: center !important;
   align-items: center !important; */
@@ -623,9 +624,9 @@ footer .col-md-2{
   }
 
   .btn-primary {
-    width: 32px;
+    width: 10px;
     height: 10px;
-    padding: 0.5em 1.1em !important;
+    /* padding: 0.5em 1.1em !important; */
   }
 
   .btn-primary-outline {
@@ -667,13 +668,14 @@ footer .col-md-2{
 
   .navbar-container .hamburger-lines {
     display: block;
-    height: 23px;
+    height: 10px;
     width: 35px;
     position: absolute;
     top: 17px;
     left: 20px;
     z-index: 2;
     display: flex;
+    gap: 5px;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -718,6 +720,11 @@ footer .col-md-2{
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
     font-weight: 500;
+  }
+
+  .navbar .menu-items li:active{
+    background: #DBA925;
+    /* border-radius: 50%; */
   }
 
   .logo {
