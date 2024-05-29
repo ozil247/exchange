@@ -385,11 +385,11 @@ li {
 
 footer{
   background: #000;
-  height: 400px;
-  padding: 0 70px 0 40px;
+  height: auto;
+  padding: 30px 70px 0 40px;
   display: flex; 
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center; 
   justify-content: flex-end;
 }
 
@@ -801,6 +801,10 @@ footer .col-md-2{
     top: 06px;
     right: 15px;
     font-size: 3rem;
+  }
+
+  .made{
+    height: auto !important;
   }
 
   .navbar .menu-items li {
