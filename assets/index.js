@@ -26,6 +26,20 @@ $(document).ready(function () {
       );
     } // End if
   });
+
+});
+
+$(document).ready(function () {
+  $("#main-slider").owlCarousel({
+    items: 2,
+    itemsDesktop: [1000, 2],
+    itemsDesktopSmall: [980, 1],
+    itemsTablet: [768, 1],
+    pagination: true,
+    navigation: true,
+    navigationText: ["<", ">"],
+    autoPlay: true
+  });
 });
 
 $count = 1;
@@ -38,7 +52,6 @@ $counter = 0;
 arrowRight.on("click", function () {
   const prevChild = testimonialArray[$count - 1];
   const active_child = testimonialArray[$count];
-  // const element = array[$count];
   
      prevChild.classList.remove('active');
      active_child.classList.add('active');
