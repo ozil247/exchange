@@ -254,6 +254,9 @@ h2 {
   font-weight: 600;
 }
 
+.about-page .hero{
+  height: auto !important;
+}
 .hero-img img {
   width: 466px;
 }
@@ -468,7 +471,7 @@ li {
 .made{
   height:1090px;
   padding:20px 0;
-    font-style: italic !important;
+  font-style: italic !important;
 
 }
 
@@ -502,12 +505,12 @@ li {
 
 footer{
   background: #000;
-  height: 570px;
+  height: 370px;
   padding: 30px 70px 0 40px;
   display: flex; 
   flex-direction: column;
   align-items: center; 
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 
@@ -589,14 +592,16 @@ footer .col-md-2{
   background: #000;
 }
 
-.made .card {
-  height: 400px !important;
+.made .card{
+  width: 300px !important;
+  height: 300px !important;
+}
+.made .col-md-4 .card img {
+  width: 300px !important;
+  height: 270px !important;
+  margin-bottom: 30px;
 }
 
-.made .col-md-4 .card img{
-  box-sizing: border-box !important; 
-  max-width: 100%;
-}
 
 @keyframes about-text-animation {
   100% {
@@ -764,6 +769,13 @@ footer .col-md-2{
 
   footer{
     height: auto;
+    
+  }
+  footer .row{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
   }
   .navbar-container .hamburger-lines .line3 {
     transform-origin: 0% 100%;
@@ -778,7 +790,7 @@ footer .col-md-2{
     transform: translate(-200%);
     display: flex;
     flex-direction: column;
-    margin-left: -40px;
+    margin-left: -10px;
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
     box-shadow: 5px 0px 10px 0px #aaa;
@@ -880,6 +892,8 @@ footer .col-md-2{
   
   .made{
     height: auto !important;
+    width: auto;
+    padding: 70px 20px !important;
   }
 
   .navbar .menu-items li {
