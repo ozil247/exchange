@@ -86,6 +86,36 @@ ul {
   padding-left: 1rem !important;
 }
 
+.user-container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+.user-container .user-menu-items{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+  gap: 40px;
+  position: absolute;
+  right: 0;
+}
+.user-container .logo{
+  position: absolute;
+  left: 0;
+}
+
+
+#offcanvasScrolling{
+  background: #000;
+  color: white;
+}
+
+.offcanvas.offcanvas-start {
+  top: 20% !important;
+}
+
 .effortless ul li ,
 .transactions-card li{
   /* position: relative;  */
@@ -113,6 +143,64 @@ ul {
   margin-right: 10px;
   border-radius: 5px;
   padding: 0.5em 1.5em;
+}
+
+.user-img{
+  /* background:#fff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-img img{
+  background: #fff;
+  border-radius: 50%;
+  width: 150px;
+  border: #DBA925 1px solid;
+}
+
+.user-assets{
+  border-bottom: #DBA925 1px solid;
+}
+
+#offcanvasId{
+  width: 20px;
+   position: absolute;
+   top: 20;
+   z-index: 1000;
+   content: 'menu';
+}
+
+.user-assets ul{
+  padding-top: 40px;
+  padding-bottom: 70px;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ color: #DBA925 !important;
+}
+
+.user-actions{
+  padding: 20px;
+}
+
+.user-details{
+ 
+}
+
+.user-actions a{
+  display: flex;
+  padding: 30px 0;
+  gap: 50px;
+  list-style: none;
+  color: #DBA925;
+  text-decoration: none;
+}
+
+.user-assets ul li a{
+  text-decoration: none;
+  color: #DBA925;
 }
 
 .btn-primary {
@@ -156,7 +244,7 @@ span {
   z-index: 12;
 }
 
-.navbar-container {
+.navbar-container  {
   display: flex;
   justify-content: space-between;
   height: 100px;
@@ -261,60 +349,6 @@ h2 {
   width: 466px;
 }
 
-/* owl carousel beginning */
-
-.owl-carousel .owl-item img {
-  display: block;
-  width: 17%;
-  float: left;
-  border: 5px solid #fff;
-  border-radius: 20px;
-  margin-left: 54px;
-  margin-right: 35px;
-  margin-top: 15px;
-}
-
-.slider-item.equal-height.style-6 {
-  background-color: #eee;
-  border-radius: 10px;
-  margin: 10px;
-}
-
-.cell-right {
-  text-align: center;
-  margin-right: 80px;
-  padding-top: 35px;
-  padding-bottom: 20px;
-}
-
-.header {
-  font-weight: 600;
-}
-
-.details.quote {
-  padding: 17px 55px;
-}
-
-.et_right_sidebar #main-content .container:before {
-  display: none;
-}
-
-#main-content .container {
-  padding-top: 10px;
-}
-
-i.fa.fa-quote-left {
-  padding: 0px 10px;
-  color: #999;
-}
-
-.owl-carousel {
-  display: flex !important;
-  width: 100%;
-  height: auto;
-}
-/* //owl carousle ending */
-
 .hero-img {
   flex: 2 1 200px;
   /* height: max-content;   */
@@ -343,7 +377,7 @@ i.fa.fa-quote-left {
 }
 
 .slide{
-  height: 1020px;
+  height: 549px;
 }
 p,
 li {
@@ -435,7 +469,7 @@ li {
 }
 
 .transactions-card .card {
-  width: 300px !important;
+  width: 250px !important;
   /* align-items: center;
   justify-content: center; */
 }
@@ -497,11 +531,7 @@ li {
   align-content: center;
 }
 
-.testimonials {
-  position: relative;
-  align-items: center;
-  justify-items: center; 
-}
+
 
 footer{
   background: #000;
@@ -532,12 +562,14 @@ footer .col-md-2{
 }
 
 .testimonial-container {
+  display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   justify-content: center;
-  height: 549px;
-  width: 100%;
-  padding: 20px 0;
+}
+
+.testimonials-section span{
+  border-bottom: none;
 }
 
 .testimonial-container:not(.active){
@@ -594,11 +626,11 @@ footer .col-md-2{
 
 .made .card{
   width: 300px !important;
-  height: 300px !important;
+  height: 400px !important;
 }
 .made .col-md-4 .card img {
-  width: 300px !important;
-  height: 270px !important;
+  width: 400px !important;
+  height: 370px !important;
   margin-bottom: 30px;
 }
 
@@ -618,15 +650,9 @@ footer .col-md-2{
   object-position: right;
 }
 
-
-
 .testimonials-section{
   background: #000000;
 
-}
-
-.testimonials {
-  padding: 5rem 0;
 }
 
 .testimonial-container {
@@ -638,9 +664,6 @@ footer .col-md-2{
   padding: 1rem;
 }
 
-.testimonial-box .checked {
-  color: #ff9529;
-}
 
 .testimonial-box .testimonial-text {
   margin: 1rem 0;
@@ -651,18 +674,6 @@ footer .col-md-2{
   text-align: center;
   padding: 1rem;
 }
-
-.customer-photo img {
-  display: block;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 50%;
-  margin: auto;
-}
-
-
 
 /* ......../ media query /.......... */
 
@@ -684,18 +695,29 @@ footer .col-md-2{
     border-radius: 10px;
   }
 
-
-
   .register .btn-primary{
     padding: 0.5em 1.5em !important;
 
   }
 
+   .made {
+     height: auto !important;
+     width: auto;
+     padding: 70px 50px !important;
+   }
+
+   .made .col-md-4 .card img {
+     width: 250px !important;
+   }
+
+   .made .col-md-4 .card {
+     width: auto !important;
+   }
   
 
   .btn-primary {
-    width: 10px;
-    height: 10px;
+    width: 50px;
+    height: 50px;
     /* padding: 0.5em 1.1em !important; */
   }
 
@@ -719,10 +741,20 @@ footer .col-md-2{
     display: block;
   }
 
-  .navbar-container {
-    display: block;
-    position: relative;
-    height: 64px;
+  .user-container {
+    display: flex;
+  } 
+
+  .user-container .user-menu-items{
+    display: flex;
+    position: absolute;
+    right: 0;
+    justify-content: center;
+  }
+
+  .user-container .logo{
+    position: absolute;
+    right: 30%;
   }
 
   .navbar-container input[type="checkbox"] {
@@ -771,11 +803,12 @@ footer .col-md-2{
     height: auto;
     
   }
+
   footer .row{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   }
   .navbar-container .hamburger-lines .line3 {
     transform-origin: 0% 100%;
@@ -804,7 +837,8 @@ align-items: center;
 
   .navbar .menu-items li:active{
     background: #DBA925;
-    /* border-radius: 50%; */
+    color: white;
+    /* border-radi: 50%; */
   }
 
   .logo {
@@ -867,6 +901,11 @@ align-items: center;
     margin: auto;
   }
 
+  .offcanvas.offcanvas-start {
+  top: 10% !important;
+  width: 300px !important;
+}
+
   .food-menu-item {
     flex-direction: column;
     text-align: center;
@@ -875,6 +914,7 @@ align-items: center;
   .form-container {
     width: 90%;
   }
+
 
   .logo {
     position: absolute;
@@ -893,7 +933,15 @@ align-items: center;
   .made{
     height: auto !important;
     width: auto;
-    padding: 70px 20px !important;
+    padding: 70px 50px !important;
+  }
+
+  .made .col-md-4 .card img {
+    width: 250px !important;
+  }
+  
+  .made .col-md-4 .card{
+    width: auto !important;
   }
 
   .navbar .menu-items li {

@@ -29,45 +29,9 @@ $(document).ready(function () {
 
 });
 
-$(document).ready(function () {
-  $("#main-slider").owlCarousel({
-    items: 2,
-    itemsDesktop: [1000, 2],
-    itemsDesktopSmall: [980, 1],
-    itemsTablet: [768, 1],
-    pagination: true,
-    navigation: true,
-    navigationText: ["<", ">"],
-    autoPlay: true
-  });
-});
+const myCarouselElement = document.querySelector('#carouselExample')
 
-$count = 1;
-const arrowRight = $("#arrow-right");
-const testimonials = $(".testimonial-contents");
-const theseChildren = testimonials.children();
-const testimonialArray = Array.from(theseChildren);
-const active_child = '';
-$counter = 0;
-arrowRight.on("click", function () {
-  const prevChild = testimonialArray[$count - 1];
-  const active_child = testimonialArray[$count];
-  
-     prevChild.classList.remove('active');
-     active_child.classList.add('active');
-    $count++;
-  console.log(testimonialArray.length);
-});
-
-const arrowLeft = $("#arrow-left");
-arrowLeft.on("click", function () {
-  
-  const prevChild = testimonialArray[$count-1];
-  const active_child = testimonialArray[$count];
-
-    // const element = array[$count];
-    prevChild.classList.add('active');
-    active_child.classList.remove('active');    
-  $count--;
-   console.log($count);
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  touch: false
 });
