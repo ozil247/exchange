@@ -186,7 +186,13 @@ ul {
 }
 
 .user-details{
- 
+}
+
+.user-details-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+
 }
 
 .user-actions a{
