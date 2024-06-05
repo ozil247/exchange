@@ -185,7 +185,9 @@ ul {
   padding: 20px;
 }
 
-.user-details{
+
+.user-details-contents table tr{
+  margin: 20px 0 !important;
 }
 
 .user-details-header{
@@ -350,6 +352,8 @@ h2 {
 
 .about-page .hero{
   height: auto !important;
+  display: flex;
+  justify-content: center;
 }
 .hero-img img {
   width: 466px;
