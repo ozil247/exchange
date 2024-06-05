@@ -359,6 +359,62 @@ h2 {
   width: 466px;
 }
 
+.admin{
+  padding: 70px !important;
+  color: #DBA925;
+
+}
+
+.admin-form form{
+display: flex;
+flex-direction: column;
+gap: 40px;
+padding: 40px 0;
+}
+
+.admin-form .submit-button{
+  display: flex;
+  justify-content: flex-end;
+}
+.admin-form form textarea{
+  
+  border: 1px solid #DBA925;
+}
+
+.card-body h3{
+  padding: 15px;
+}
+
+
+.admin-blog .col-md-6{
+  padding: 0 30px;
+  margin: 40px 0;
+}
+.admin-blog .card{
+  border-radius: 10px;
+  border: #DBA925 1px solid;
+  padding: 20px;
+  height: 270px;
+}
+
+.admin-blog img{
+  border: #DBA925 1px solid;
+  height: 143px;
+  border-radius: 10px;
+}
+
+.admin-blog .card-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-blog .card-footer{
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+
 .hero-img {
   flex: 2 1 200px;
   /* height: max-content;   */
