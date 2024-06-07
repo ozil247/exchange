@@ -12,7 +12,7 @@
 
   </head>
 
-  <body>
+  <body class="admin">
     <nav class="navbar">
       <div class="navbar-container user-container ">
 
@@ -27,155 +27,217 @@
 
       </div>
     </nav>
-    <a href="#" class=" btn-primary" type="button" id="offcanvasId" data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
 
-    </a>
+    <section class="admin-section-flex " id="admin-section-flex">
+      <button class=" btn-primary-outline" id="offCanvasBtn" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+        </svg>
+      </button>
 
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-      id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-      <div class="offcanvas-header">
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <button type="button" class=" btn-primary-outline" data-bs-dismiss="offcanvas" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+            </svg>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="user-img ">
+            <img src="assets/images/image 119.png" alt="" class=" img-fluid">
+            <h5> Prosper CEO </h5>
+            <p> proxchange.global@gmail.com </p>
+          </div>
+          <div class="user-assets">
+            <ul>
+              <li><a href="#">
+                  <h5> Dashboard </h5>
+                </a></li>
+              <li><a href="#">
+                  <h5> User Details </h5>
+                </a></li>
+              <li><a href="#">
+                  <h5> Blog </h5>
+                </a></li>
+              <li><a href="#">
+                  <h5> About Us </h5>
+                </a></li>
+              <li><a href="#">
+                  <h5> FAQ </h5>
+                </a></li>
+              <li><a href="#">
+                  <h5> Terms, Privacy And Security </h5>
+                </a></li>
+              <li>
+                <a href="#">
+                  <h5> User Review </h5>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h5> Contact Us </h5>
+                </a>
+              </li>
+        
+            </ul>
+          </div>
+          <div class="user-actions">
+            <a href="#">
+              <img src="assets/images/Vector (1).png" alt="" srcset="">
+              <h5> Log Out </h5>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="side-bar " id="side-bar">
+        <div class="offcanvas-header">
+          <!-- <button class="btn btn-close">
+                  <i class="fas-solid fa-bars text-white"></i>
+                 </button> -->
+        </div>
+        <div class="offcanvas-body">
+          <div class="user-img ">
+            <img src="assets/images/image 119.png" alt="" class=" img-fluid">
+            <h5> Prosper CEO </h5>
+            <p> proxchange.global@gmail.com </p>
+          </div>
+          <div class="user-assets">
+            <ul>
+              <li><a href="#">
+                  <h5> Dashboard </h5>
+                </a></li>
+              <li><a href="#">
+                  <h5> User Details </h5>
+                </a></li>
+              <li><a href="#">
+                  <h5> Blog </h5>
+                </a></li>
+              <li><a href="#">
+                  <h5> About Us </h5>
+                </a></li>
+              <li><a href="#">
+                  <h5> FAQ </h5>
+                </a></li>
+              <li><a href="#">
+                  <h5> Terms, Privacy And Security </h5>
+                </a></li>
+              <li>
+                <a href="#">
+                  <h5> User Review </h5>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <h5> Contact Us </h5>
+                </a>
+              </li>
 
-        <button type="button" class="btn-close btn-primary-outline" data-bs-dismiss="offcanvas" aria-label="Close">
-          <i class="fa-solid fa-bars"></i>
+            </ul>
+          </div>
+          <div class="user-actions">
+            <a href="#">
+              <img src="assets/images/Vector (1).png" alt="" srcset="">
+              <h5> Log Out </h5>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <button class="btn-primary-outline admin-btn" id="admin-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+          </svg>
         </button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="user-img ">
-          <img src="assets/images/image 119.png" alt="" class=" img-fluid">
-          <h5> Prosper CEO </h5>
-          <p> proxchange.global@gmail.com </p>
-        </div>
-        <div class="user-assets">
-          <ul>
-            <li><a href="#">
-                <h5> Dashboard </h5>
-              </a></li>
-            <li><a href="#">
-                <h5> User Details </h5>
-              </a></li>
-            <li><a href="#">
-                <h5> Blog </h5>
-              </a></li>
-            <li><a href="#">
-                <h5> About Us </h5>
-              </a></li>
-            <li><a href="#">
-                <h5> FAQ </h5>
-              </a></li>
-            <li><a href="#">
-                <h5> Terms, Privacy And Security </h5>
-              </a></li>
-            <li>
-              <a href="#">
-                <h5> User Review </h5>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <h5> Contact Us </h5>
-              </a>
-            </li>
 
-          </ul>
+        <div class="user-details-header">
+          <h2> Blog </h2>
         </div>
-        <div class="user-actions">
-          <a href="#">
-            <img src="assets/images/Vector (1).png" alt="" srcset="">
-            <h5> Log Out </h5>
-          </a>
-        </div>
-      </div>
-    </div>
+        <div class="admin-blog" id="admin-blog">
 
-    <section class="admin-blog admin">
-      <h2> Blog </h2>
-      <div class="row">
-        <div class="col-md-6 faqs-main">
-          <div class="card">
-            <div class="card-body">
-              <img src="assets/images/close-up-spread-coins-us-one-hundred-dollar-bills 1.png" class="img-fluid" width="50%" alt="" srcset="">
-              <h3>
+          <div class="blog-card">
+            <div class="card">
+              <img src="assets/images/close-up-spread-coins-us-one-hundred-dollar-bills 1.png" class="img-fluid" alt=""
+                srcset="">
+              <h4>
                 Keeping safe
                 -Cybersecurity
                 in Finance
-              </h3>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn-primary-outline">
-                Edit Post
-              </a>
-              <a href="" class="btn-primary-outline">
-                Delete Post 
-              </a>
+              </h4>
+              <div>
+                <a href="#" class="btn-primary-outline"> Edit Post </a>
+              </div>
+              <div>
+                <a href="#" class="btn-primary-outline"> Delete Post </a>
+
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 faqs-main">
-          <div class="card">
-            <div class="card-body">
-              <img src="assets/images/close-up-spread-coins-us-one-hundred-dollar-bills 1.png" class="img-fluid" width="50%"
-                alt="" srcset="">
-              <h3>
+
+          <div class="blog-card">
+            <div class="card">
+              <img src="assets/images/close-up-spread-coins-us-one-hundred-dollar-bills 1.png" class="img-fluid" alt=""
+                srcset="">
+              <h4>
                 Fintech’s positive
                 social Impact
-              </h3>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn-primary-outline">
-                Edit Post
-              </a>
-              <a href="" class="btn-primary-outline">
-                Delete Post
-              </a>
+              </h4>
+              <div>
+                <a href="#" class="btn-primary-outline"> Edit Post </a>
+              </div>
+              <div>
+                <a href="#" class="btn-primary-outline"> Delete Post </a>
+
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 faqs-main">
-          <div class="card">
-            <div class="card-body">
-              <img src="assets/images/close-up-spread-coins-us-one-hundred-dollar-bills 1.png" class="img-fluid" width="50%"
-                alt="" srcset="">
-              <h3>
+
+          <div class="blog-card">
+            <div class="card">
+              <img src="assets/images/close-up-spread-coins-us-one-hundred-dollar-bills 1.png" class="img-fluid" alt="" srcset="">
+              <h4>
                 Staying up to
                 speed-regulation
                 changes in rates
-              </h3>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn-primary-outline">
-                Edit Post
-              </a>
-              <a href="" class="btn-primary-outline">
-                Delete Post
-              </a>
+              </h4>
+              <div>
+                <a href="#" class="btn-primary-outline"> Edit Post </a>
+              </div>
+              <div>
+                <a href="#" class="btn-primary-outline"> Delete Post </a>   
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 ">
-          <div class="card">
-            <div class="card-body">
-              <img src="assets/images/close-up-spread-coins-us-one-hundred-dollar-bills 1.png" class="img-fluid" width="50%"
-                alt="" srcset="">
-              <h3>
+          <div class="blog-card">
+            <div class="card">
+              <img src="assets/images/close-up-spread-coins-us-one-hundred-dollar-bills 1.png" class="img-fluid" alt="" srcset="">
+              <h4>
                 Company
                 Culture
-              </h3>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn-primary-outline">
-                Edit Post
-              </a>
-              <a href="" class="btn-primary-outline">
-                Delete Post
-              </a>
+              </h4>
+              <div>
+                <a href="#" class="btn-primary-outline"> Edit Post </a>
+              </div>
+              <div>
+                <a href="#" class="btn-primary-outline"> Delete Post </a>
+          
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <script src="assets/index.js"></script>
+    <script src="assets/admin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 

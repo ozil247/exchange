@@ -1,6 +1,6 @@
-// document.write(
-//   unescape("%3Cscript src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' type='text/javascript'%3E%3C/script%3E")
-// );
+//  document.write(
+//  unescape("%3Cscript src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' type='text/javascript'%3E%3C/script%3E")
+//  );
 
 $(document).ready(function () {
   // Add smooth scrolling to all links
@@ -35,3 +35,5 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
   interval: 2000,
   touch: false
 });
+
+
