@@ -71,7 +71,7 @@ a {
   height: 500px;
 }
 
-.effort .hero-text{
+.effort .hero-text {
   width: 400px;
   height: 400px;
 }
@@ -171,6 +171,55 @@ ul {
   padding: 20px;
 }
 
+.user-dashboard .card .left,
+.user-dashboard .card .right {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+}
+
+.user-dashboard .card img{
+  width: 56px; height: 53px;
+}
+
+.user-dashboard .card.paypal {
+  background: #2790C3;
+  color: white;
+  border: none;
+}
+
+.user-dashboard .card {
+  margin: 30px 0 !important;
+  padding: 25px;
+}
+
+.user-dashboard .col-md-6{
+  height: 218px;
+  cursor: pointer;
+}
+
+.user-dashboard .card.perfect-money {
+  background: #D60303;
+  color: white;
+  border: none;
+}
+
+.user-dashboard .card.exchange{
+  display: flex;
+  flex-direction: row;
+}
+.user-dashboard .col-12 .card {
+  display: flex !important;
+  flex-direction: row;
+  background: #DBA925;
+  color: white;
+  border: none;
+}
+
+.user-dashboard .exchange {
+  border: 2px #DBA925 solid;
+  color: #DBA925;
+  padding: 5em 10px;
+}
 
 .user-details-contents table tr {
   margin: 10px 0 !important;
@@ -256,8 +305,8 @@ span {
 .navbar>.container-lg,
 .navbar>.container-md,
 .navbar>.container-xl,
-.navbar>.container-xxl{
-    flex-wrap: nowrap !important;
+.navbar>.container-xxl {
+  flex-wrap: nowrap !important;
 }
 
 .menu-items {
@@ -303,7 +352,7 @@ span {
   height: 601px;
 }
 
-.admin .hero{
+.admin .hero {
   height: auto !important;
   display: flex;
   justify-content: center;
@@ -358,6 +407,24 @@ h2 {
   font-weight: 600;
 }
 
+.services-we-offer .row .col-lg-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfect-transactions .transaction-text{
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start; */
+}
+
+.perfect-transactions .transaction-text img{
+  width: 100% !important;
+  height: auto;
+}
+
 .about-page .hero {
   height: auto !important;
   display: flex;
@@ -368,17 +435,20 @@ h2 {
   width: 466px;
 }
 
+.navbar,
 .admin .navbar {
   height: 80px;
   position: relative;
   z-index: 5;
+  border-bottom: 5px solid #DBA925;
 }
 
-.admin .padding{
+.admin .padding {
   padding: 40px 0 !important;
 }
 
-.admin .about-us-page > *, .blog-img-upload{
+.admin .about-us-page>*,
+.blog-img-upload {
   border: 1px #DBA925 solid;
   border-radius: 10px;
   height: 164px;
@@ -389,13 +459,13 @@ h2 {
   justify-content: space-between;
 }
 
-.blog-img-upload{
+.blog-img-upload {
   /* content: ; */
   position: relative;
   background: white;
 }
 
-.blog-img-upload input{
+.blog-img-upload input {
   height: 100%;
   width: 100%;
   background: transparent;
@@ -404,7 +474,7 @@ h2 {
   opacity: 0;
 }
 
-.admin .review .review-card{
+.admin .review .review-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 190px;
@@ -417,12 +487,12 @@ h2 {
   align-items: center;
 }
 
-.admin .review .review-card .grid-1 img{
+.admin .review .review-card .grid-1 img {
   border: 1px solid #DBA925;
   border-radius: 50%;
 }
 
-.admin .review .review-card .grid-1 .text{
+.admin .review .review-card .grid-1 .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -431,7 +501,7 @@ h2 {
   font-weight: bold;
 }
 
-.admin .review .review-card .grid-1 .text p{
+.admin .review .review-card .grid-1 .text p {
   margin-bottom: 0;
   font-weight: bold;
 }
@@ -443,45 +513,46 @@ h2 {
   align-items: center;
 }
 
-.admin .review .review-card .grid-3{
+.admin .review .review-card .grid-3 {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-.admin .user-img{
+.admin .user-img {
   color: #DBA925;
 }
-.admin .user-img img{
+
+.admin .user-img img {
   width: 30%;
   margin: 30px 0;
 }
 
- .admin #admin-blog {
-   display: grid;
-   grid-template-columns: 451px 451px;
-   /* grid-template-rows: 270px; */
-   grid-gap: 30px;
-   justify-content: center;
-   /* grid-row-gap: 30px; */
- }
+.admin #admin-blog {
+  display: grid;
+  grid-template-columns: 451px 451px;
+  /* grid-template-rows: 270px; */
+  grid-gap: 30px;
+  justify-content: center;
+  /* grid-row-gap: 30px; */
+}
 
- .admin #admin-blog .card {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 3fr 1fr;
-   /* grid-row-gap: 1em; */
-   padding: 30px; 
-   border: #DBA925 1px solid;
-   gap: 30px;
-   height: 270px;
- }
+.admin #admin-blog .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  /* grid-row-gap: 1em; */
+  padding: 30px;
+  border: #DBA925 1px solid;
+  gap: 30px;
+  height: 270px;
+}
 
- .admin #admin-blog img{
+.admin #admin-blog img {
   width: 163px;
   height: 143px;
-   border: #DBA925 1px solid;
-   border-radius: 10px;
- }
+  border: #DBA925 1px solid;
+  border-radius: 10px;
+}
 
 .admin .navbar .logo {
   z-index: -1;
@@ -501,7 +572,7 @@ h2 {
   transition: 3ms all ease-in-out;
 }
 
-.admin #offCanvasBtn{
+.admin #offCanvasBtn {
   position: absolute;
   /* z-index: ; */
   display: none;
@@ -511,26 +582,27 @@ h2 {
 
 
 
-.offcanvas-xxl, .offcanvas-xl{
+.offcanvas-xxl,
+.offcanvas-xl {
   display: none;
 }
 
-.offcanvas-sm{
+.offcanvas-sm {
   display: block;
   /* background: #000; */
   width: 250px !important;
 }
 
-.offcanvas-header{
+.offcanvas-header {
   justify-content: flex-end;
   padding: 20px;
 }
 
-.offcanvas-header button{
+.offcanvas-header button {
   height: auto;
 }
 
-.offcanvas.offcanvas-start{
+.offcanvas.offcanvas-start {
   background: #000;
 }
 
@@ -540,13 +612,13 @@ h2 {
   visibility: visible;
 }
 
-.register h5{
+.register h5 {
   color: #DBA925;
   text-align: center;
 }
 
 .admin table {
-  border-collapse:separate; 
+  border-collapse: separate;
   border-spacing: 0 1em;
 }
 
@@ -574,11 +646,13 @@ h2 {
   left: 0;
   padding: 50px 0 0 0;
   background: #000;
+  border-right: 5px solid #DBA925;
 }
 
 .admin-section-flex .main-content {
   padding: 40px;
   position: relative;
+  width: 100%;
 }
 
 
@@ -673,14 +747,14 @@ li {
   height: 1000px;
 }
 
-.services-we-offer .img-div{
-  width: 150px ;
+.services-we-offer .img-div {
+  width: 150px;
   height: 90px;
   border: 1px solid #DBA925;
   border-radius: 10px;
 }
 
-.services-we-offer .img-div img{
+.services-we-offer .img-div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -725,11 +799,11 @@ li {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+    justify-content: space-around;
   align-items: center;
 }
 
-.services-we-offer .btn-primary{
+.services-we-offer .btn-primary {
   width: auto;
   height: auto;
 }
@@ -747,42 +821,44 @@ li {
   justify-content: center !important;
 }
 
-.perfect-transactions .small-card{
+.perfect-transactions .small-card {
   position: relative;
   box-shadow: 5px rgba(0, 0, 0, .4);
 
 }
-.perfect-transactions .small-card > *{
+
+.perfect-transactions .small-card>* {
   position: absolute;
   background: transparent;
   border: none;
-  overflow: hidden ;
+  /* overflow: hidden; */
 }
-.perfect-transactions .paypal > * ,
+
+.perfect-transactions .paypal>*,
 .transactions-card .card.back.active span {
   border: #0070BA 2px solid;
   color: #0070BA;
 }
 
-.perfect-transactions .perfect-money > *,
+.perfect-transactions .perfect-money>*,
 .transactions-card .perfect-money .card.back.active span {
   border: #D60303 2px solid;
   color: #D60303;
 }
 
-.perfect-transactions .skrill > *,
+.perfect-transactions .skrill>*,
 .transactions-card .skrill .card.back.active span {
   border: #862165 2px solid;
   color: #862165;
 }
 
-.perfect-transactions .payoneer > *,
+.perfect-transactions .payoneer>*,
 .transactions-card .payoneer .card.back.active span {
   border: #F07B0E 2px solid;
   color: #F07B0E;
 }
 
-.perfect-transactions .cryptocurrency > *,
+.perfect-transactions .cryptocurrency>*,
 .transactions-card .cryptocurrency .card.back.active span {
   border: #DBA925 2px solid;
   color: #DBA925;
@@ -799,55 +875,69 @@ li {
   width: 100% !important;
   padding: 10px 0;
   position: relative;
-  display: flex ;
+  display: flex;
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
 }
 
-.transactions-card .li-card{
+.transactions-card .li-card {
   position: absolute;
   height: auto;
   width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   padding: 5px;
   background: #fff;
   font-size: small;
-  top: 100%;
   display: none;
   z-index: 1000;
   border: 1px solid inherit;
   border-radius: 10px;
 }
 
-.transactions-card .li-card.active{
-    display: block;
-    top: 0;
+.transactions-card .li-card.active {
+  display: block;
+  animation: animateLiCard 1s forwards alternate ;
 }
 
-details{
+@keyframes animateLiCard {
+  0%{
+    top: 200%;
+    display: none;
+  }
+  50%{
+    top : -200%;
+  }
+
+  100%{
+    top: 100%;
+  }
+}
+
+details {
   color: transparent !important;
 }
 
 .transactions-card .left .front,
-.left{
+.left {
   border-radius: 20px 10px 10px 20px;
 }
 
-.transactions-card .left .card.front{
+.transactions-card .left .card.front {
   transform-origin: left;
   transition: .5s ease-in-out;
 }
 
-.transactions-card .right .front, .right{
+.transactions-card .right .front,
+.right {
   border-radius: 10px 20px 20px 10px;
 
 }
 
-.transactions-card .left .card.back{
+.transactions-card .left .card.back {
   transform: rotateY(90deg) translateX(100%);
   transform-origin: left;
   transition: .5s ease-in-out;
@@ -859,13 +949,14 @@ details{
   transition: .5s ease-in-out;
 }
 
-.transactions-card .left .card.front.active{
+.transactions-card .left .card.front.active {
   transform: rotateY(-90deg);
 }
 
-.transactions-card  .card.back.active{
+.transactions-card .card.back.active {
   transform: rotateY(0) translateX(0);
-  width: 100%; height: 290px !important;
+  width: 100%;
+  height: 290px !important;
   padding: 7px;
   text-align: center;
   border-radius: 0 15px 15px 20px;
@@ -875,7 +966,8 @@ details{
 
 .transactions-card .card.back.active span {
   position: absolute;
-  top: 0; right: 0;
+  top: 0;
+  right: 0;
   width: 40px;
   border-radius: 0 0 0 20px;
   /* color: #fff; */
@@ -884,7 +976,7 @@ details{
   text-align: center;
 }
 
-.transactionBtn{
+.transactionBtn {
   cursor: pointer;
 }
 
@@ -912,9 +1004,9 @@ details{
   content: url('images/arrow-circle-down.png');
 }
 
-.transactions-card > * ul li.active::after{
+/* .transactions-card > * ul li.active::after{
   z-index: 1000;
-}
+} */
 
 .transactions-card .left {
   border-radius: 20px 10px 10px 20px !important;
@@ -932,7 +1024,14 @@ details{
 
 .made .col-md-4 .card {
   width: 349px;
-  
+}
+
+.made .col-md-4{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  width: 30%;
 }
 
 #arrow-left {
@@ -983,7 +1082,7 @@ footer .col-md-2 {
   align-items: flex-end;
 }
 
-.carousel-inner{
+.carousel-inner {
   scroll-snap-type: x mandatory !important;
 }
 
@@ -1026,20 +1125,20 @@ footer .col-md-2 {
   align-content: center;
 }
 
-.register .btn-input{
+.register .btn-input {
   display: flex;
   justify-content: center;
   margin: 20px 0;
 }
 
-.register .btn-input a{
+.register .btn-input a {
   width: 70%;
   text-align: center;
   background: #000;
   color: #DBA925 !important;
 }
 
-.register a{
+.register a {
   text-decoration: none;
   color: #DBA925;
 }
@@ -1133,44 +1232,45 @@ footer .col-md-2 {
     height: 75%;
   }
 
-   body>* {
-     height: auto !important;
-     padding-bottom: 30px !important;
-   }
+  body>* {
+    height: auto !important;
+    padding-bottom: 30px !important;
+  }
 
-   .btn-primary, .btn-primary-outline{
+  .btn-primary,
+  .btn-primary-outline {
     width: auto !important;
     height: auto !important;
-   }
+  }
 
-   .effort{
+  .effort {
     /* width: auto; */
     height: auto;
-   }
+  }
 
-   .services-we-offer{
+  .services-we-offer {
     height: auto;
-   }
+  }
 
-   .services-we-offer .card{
+  .services-we-offer .card {
     width: auto;
     height: auto;
-   }
+  }
 
-   .services-we-offer .card .btn-primary-outline{
+  .services-we-offer .card .btn-primary-outline {
     width: auto;
     height: auto;
-   }
+  }
 
-   .transactions-card div {
-     width: auto !important;
-     height: auto;
-     padding: 30px 0;
-   }
+  .transactions-card div {
+    width: 190px !important;
+    height: 190px;
+    padding: 30px 0;
+  }
 
-   .register{
+  .register {
     height: 100vh !important;
-   }
+  }
 }
 
 
@@ -1211,7 +1311,7 @@ footer .col-md-2 {
     font-size: 12px;
   }
 
-  .navbar>.container-sm{
+  .navbar>.container-sm {
     display: flex;
     flex-wrap: nowrap !important;
   }
@@ -1223,7 +1323,7 @@ footer .col-md-2 {
     padding: 70px 50px !important;
   }
 
-  .made .row{
+  .made .row {
     gap: 30px !important;
   }
 
@@ -1335,6 +1435,13 @@ footer .col-md-2 {
     align-items: center;
   }
 
+  footer .col-md-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+  }
+
   .navbar-container .hamburger-lines .line3 {
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
@@ -1426,7 +1533,7 @@ footer .col-md-2 {
     margin: auto;
   }
 
-  .admin .admin-btn{
+  .admin .admin-btn {
     display: none;
   }
 
@@ -1434,7 +1541,8 @@ footer .col-md-2 {
     display: none;
   }
 
-  .admin button, .btn-primary-outline{
+  .admin button,
+  .btn-primary-outline {
     width: auto;
     height: auto;
   }
@@ -1455,7 +1563,7 @@ footer .col-md-2 {
     position: absolute;
     top: 10%;
     left: 0;
-    z-index: 1000; 
+    z-index: 1000;
     display: block;
   }
 
@@ -1472,12 +1580,12 @@ footer .col-md-2 {
     border-radius: 10px;
   }
 
-  .admin #admin-blog{
+  .admin #admin-blog {
     display: flex;
     flex-direction: column;
   }
 
-  .admin section{
+  .admin section {
     height: auto;
   }
 
@@ -1502,8 +1610,9 @@ footer .col-md-2 {
     height: auto !important;
     display: flex;
     flex-direction: column;
-  }
+            align-items: center;
 
+  }
 
   .made {
     height: auto !important;
@@ -1511,10 +1620,14 @@ footer .col-md-2 {
     padding: 70px 50px !important;
   }
 
-   .made .img-div{
+  .made .img-div {
     width: auto;
     height: 300px;
-   }
+  }
+
+  .made .col-md-4{
+        width: 100%;
+  }
 
   .made .col-md-4 .card .img-fluid {
     width: 100% !important;
@@ -1532,13 +1645,14 @@ footer .col-md-2 {
     font-size: 1.8rem;
     font-weight: 500;
   }
-  .register{
+
+  .register {
     height: 100vh !important;
     display: flex !important;
     justify-content: space-around !important;
   }
 
-  .register .card{
+  .register .card {
     width: 70vw !important;
   }
 }
@@ -1555,8 +1669,16 @@ footer .col-md-2 {
   .register {
     height: 100vh !important;
   }
-  .admin-section-flex .side-bar{
-    height: 100vh;
+
+  .admin-section-flex .side-bar {
+    height: 100%;
+  }
+
+  .transactions-card .small-card {
+    width: 190px !important;
+    height: 190px;
+    padding: 30px 10px;
+
   }
 }
 
