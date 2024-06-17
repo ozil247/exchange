@@ -6,7 +6,8 @@
      adminSection.classList.toggle('active');
      sideBar.classList.toggle('active');
      console.log(adminSection);
-
    });
+
+   
  }
 

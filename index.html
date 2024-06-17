@@ -61,9 +61,12 @@
     <section class=" effort">
       <div class="hero-wrapper container">
         <div class="row">
-          <img
-            src="assets/images/elegant-attractive-muslim-woman-using-mobile-laptop-searching-online-shopping-information-living-room-home-portrait-happy-woman-purchasing-product-via-online-shopping-pay-using-credit-card 1.png"
-            class="img-fluid col-md-6 hero-text " alt="food" />
+          <div class="col-md-6 hero-text">
+            <img
+              src="assets/images/elegant-attractive-muslim-woman-using-mobile-laptop-searching-online-shopping-information-living-room-home-portrait-happy-woman-purchasing-product-via-online-shopping-pay-using-credit-card 1.png"
+              class="img-fluid effort-img" alt="food" />
+          </div>
+
 
           <div class="hero-img col-md-6 ">
             <!-- <p class="small">hero Us</p> -->
@@ -93,16 +96,18 @@
         <p class="small"> Services We Offer</p>
         <h2> <span> We </span> provide a comprehensive suite of services
           designed to facilitate secure <span> cryptocurrency </span>
-          transactions. 
+          transactions.
         </h2>
       </div>
 
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <div class="card">
             <div class="card-body justify-content-between">
-              <img src="assets/images/closeup-exchanging-bitcoin-isolated-white-background 1.png"
-                class="btn-primary-outline img-fluid" alt="" srcset="">
+              <div class="img-div">
+                <img src="assets/images/closeup-exchanging-bitcoin-isolated-white-background 1.png" class="img-fluid"
+                  alt="" srcset="">
+              </div>
 
               <h5> Buy Cryptocurrency </h5>
               <p>
@@ -123,11 +128,12 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <div class="card">
             <div class="card-body ">
-              <img src="assets/images/close-up-bitcoin-pile-top-banknotes 1.png" class="btn-primary-outline img-fluid"
-                alt="" srcset="">
+              <div class="img-div">
+                <img src="assets/images/close-up-bitcoin-pile-top-banknotes 1.png" class="img-fluid" alt="" srcset="">
+              </div>
               <h5> Sell Cryptocurrency </h5>
               <p>
                 Convert your crypto currencies
@@ -146,11 +152,13 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <div class="card">
             <div class="card-body ">
-              <img src="assets/images/3d-render-online-bill-payment-invoice-concept 1.png"
-                class="btn-primary-outline img-fluid" alt="" srcset="">
+              <div class="img-div">
+                <img src="assets/images/3d-render-online-bill-payment-invoice-concept 1.png" class="img-fluid" alt=""
+                  srcset="">
+              </div>
               <h5> Secure Transactions </h5>
               <p>
                 We prioritize the security of your
@@ -174,7 +182,7 @@
 
     <section class="perfect-transactions ">
       <div class="row">
-        <div class="col-md-5 transaction-text justify-content-center align-items-center">
+        <div class="col-md-5 transaction-text justify-contents-center align-items-center">
           <h2>
             <span> Enjoy </span> Perfect Transactions Success
             <span> Rates </span>
@@ -188,47 +196,216 @@
         </div>
 
         <div class="col-md-7 transactions-card">
-              <div class="card left paypal">
-                <h5> PayPal </h5>
-                <ul>
-                  <li> GNS Exchange Rate </li>
-                  <li> FNF Exchange Rate </li>
-                </ul>
-              </div>
-              <div class="card right perfect-money">
-                <h5> Perfect Money </h5>
-                <ul>
-                  <li> Exchange Rate </li>
-                </ul>
-              </div>
-              <div class="card left skrill">
-                <h5> Skrill </h5>
-                <ul>
-                  <li> Exchange Rate </li>
-                </ul>
-              </div>
-              <div class="card right payoneer">
-                <h5> Payoneer </h5>
-                <ul>
-                  <li> Exchange Rate </li>
-                </ul>
-              </div>
-              <div class="card left cryptocurrency">
-                <h5> Cryptocurrency </h5>
-                <ul>
-                  <li> Exchange Rate </li>
-                </ul>
-              </div>
-              <div class="card bank-transfer">
-                <h5> International <br>
-                  Bank Transfer </h5>
-                <ul>
-                  <li> Exchange Rate </li>
-                </ul>
-              </div>
-        </div>
+          <div class=" small-card left paypal" id="paypay">
+            <div class="front card " id="paypalFront">
+              <h5 class="transactionBtn"> PayPal </h5>
+              <ul>
+                <li class="liTag"> GNS Exchange Rate
+
+                  <div class="card li-card " id="liCard">
+                    <h6>
+                    <li class=""><a href="#">Buy (Rate We Buy)</a></li>
+                    </h6>
+                    <p> N1170/$1 = $1000 and below </p>
+                    <p>N1180/$1 = $1001 - $3499</p>
+                    <p> N1190/$1 = $3500 - $4999 </p>
+                    <p> $5000 and above = we give
+                      you more premium rates.</p>
+                    <a href="#"> Buy (Rate we sell) </a>
+                    <p> N1490/$1 </p>
+                  </div>
+                </li>
+                <li> FNF Exchange Rate
+                </li>
+              </ul>
+            </div>
+            <div class="back card " id="papalBack">
+              <span class="transactionBtn"> < </span> 
+              <p> PayPal is a widely used online payment system that allows individuals and businesses to send
+                  and receive money securely.
+                  It supports various
+                  currencies and offers buyer protection. PayPal is ideal for online payment, invoicing, web payments and
+                  international
+                  transactions.
+              </p>
+            </div>
+          </div>
+
+          <div class=" small-card right perfect-money" id="perfect-money">
+            <div class="front card " id="">
+              <h5 class="transactionBtn"> Perfect Money </h5>
+              <ul>
+                <li class="liTag"> Exchange Rate
+                  <div class="card li-card " id="liCard">
+                    <h6>
+                <li class=""><a href="#">Buy (Rate We Buy)</a></li>
+                </h6>
+                <p> N1170/$1 = $1000 and below </p>
+                <p>N1180/$1 = $1001 - $3499</p>
+                <p> N1190/$1 = $3500 - $4999 </p>
+                <p> $5000 and above = we give
+                  you more premium rates.</p>
+                <a href="#"> Buy (Rate we sell) </a>
+                <p> N1490/$1 </p>
+            </div>
+            </li>
+
+            </ul>
+            </div>
+            <div class="back card " id="papayBack">
+              <span class="transactionBtn"> < </span> 
+              <p>Perfect money is an online payment platform
+                  designed for quick and secure financial transaction. It supports instant payments,
+                  currency exchanges, and interest accumulations
+                  on account balances. Perfect money is ideal for
+                  businesses and individuals seeking privacy and
+                  efficieny
+              </p>
+            </div>
+          </div>
+
+          <div class=" small-card left skrill" id="paypay">
+            <div class="front card " id="paypalFront">
+              <h5 class="transactionBtn"> Skrill </h5>
+              <ul>
+                <li class="liTag"> Exchange Rate
+          
+                  <div class="card li-card " id="liCard">
+                    <h6>
+                <li class=""><a href="#">Buy (Rate We Buy)</a></li>
+                </h6>
+                <p> N1170/$1 = $1000 and below </p>
+                <p>N1180/$1 = $1001 - $3499</p>
+                <p> N1190/$1 = $3500 - $4999 </p>
+                <p> $5000 and above = we give
+                  you more premium rates.</p>
+                <a href="#"> Buy (Rate we sell) </a>
+                <p> N1490/$1 </p>
+            </div>
+            </li>
+            
+            </ul>
+          </div>
+          <div class="back card " id="papayBack">
+            <span class="transactionBtn">
+              < </span>
+                <p> Skrill is a digital wallet and online payment
+                platform like PayPal and Perfect money. it supports instant money transfers, online purchases, and moving money fast
+                among forex
+                trading. Skrill is perfect for online gamblers,
+                traders and global shoppers supporting multiple
+                currencies.
+                </p>
+          </div>
+          </div>
+          
+          <div class=" small-card right payoneer" id="perfect-money">
+            <div class="front card " id="">
+              <h5 class="transactionBtn"> Payoneer </h5>
+              <ul>
+                <li class="liTag"> Exchange Rate
+                  <div class="card li-card " id="liCard">
+                    <h6>
+                <li class=""><a href="#">Buy (Rate We Buy)</a></li>
+                </h6>
+                <p> N1170/$1 = $1000 and below </p>
+                <p>N1180/$1 = $1001 - $3499</p>
+                <p> N1190/$1 = $3500 - $4999 </p>
+                <p> $5000 and above = we give
+                  you more premium rates.</p>
+                <a href="#"> Buy (Rate we sell) </a>
+                <p> N1490/$1 </p>
+            </div>
+            </li>
+          
+            </ul>
+          </div>
+          <div class="back card " id="papayBack">
+            <span class="transactionBtn">
+              < </span>
+                <p>Perfect money is an online payment platform
+                  designed for quick and secure financial transaction. It supports instant payments,
+                  currency exchanges, and interest accumulations
+                  on account balances. Perfect money is ideal for
+                  businesses and individuals seeking privacy and
+                  efficieny
+                </p>
+          </div>
+          </div>
+
+          <div class=" small-card left cryptocurrency" id="paypay">
+            <div class="front card " id="paypalFront">
+              <h5 class="transactionBtn"> Cryptocurrency </h5>
+              <ul>
+                <li class="liTag"> GNS Exchange Rate
+          
+                  <div class="card li-card " id="liCard">
+                    <h6>
+                <li class=""><a href="#">Buy (Rate We Buy)</a></li>
+                </h6>
+                <p> N1170/$1 = $1000 and below </p>
+                <p>N1180/$1 = $1001 - $3499</p>
+                <p> N1190/$1 = $3500 - $4999 </p>
+                <p> $5000 and above = we give
+                  you more premium rates.</p>
+                <a href="#"> Buy (Rate we sell) </a>
+                <p> N1490/$1 </p>
+            </div>
+            </li>
+            <li> FNF Exchange Rate
+            </li>
+            </ul>
+          </div>
+          <div class="back card " id="papayBack">
+            <span class="transactionBtn">
+              < </span>
+                <p> Cryptocurrencies like Bitcoin and Ethereum are
+                decentralized digital currencies enabling secure, fast, and borderless transactions. Ideal for tech-
+                savvy users, they offer low fees, privacy, and
+                investment opportunities. Cryptocurrencies are
+                used for online purchases and international
+                transfer.
+                </p>
+          </div>
+          </div>
+          
+          <div class=" small-card right bank-transfer " id="perfect-money">
+            <div class="front card " id="">
+              <h5 class="transactionBtn"> International Bank Transfer </h5>
+              <ul>
+                <li class="liTag"> Exchange Rate
+                  <div class="card li-card " id="liCard">
+                    <h6>
+                <li class=""><a href="#">Buy (Rate We Buy)</a></li>
+                </h6>
+                <p> N1170/$1 = $1000 and below </p>
+                <p>N1180/$1 = $1001 - $3499</p>
+                <p> N1190/$1 = $3500 - $4999 </p>
+                <p> $5000 and above = we give
+                  you more premium rates.</p>
+                <a href="#"> Buy (Rate we sell) </a>
+                <p> N1490/$1 </p>
+            </div>
+            </li>
+          
+            </ul>
+          </div>
+          <div class="back card " id="papayBack">
+            <span class="transactionBtn">
+              < </span>
+                <p>International bank transfers allow you to send
+                money directly from one bank account to
+                another across borders. This method is secure
+                and reliable, suitable for large transaction,
+                business payments, and personal remittances.
+                </p>
+          </div>
+          </div>
+
+      
       </div>
-    
+      </div>
+
     </section>
 
     <section class="made">
@@ -237,15 +414,14 @@
         made easy <br> with <span> Proxchange </span>
       </h2>
       <p> At Proxchange, we have simplified the process of making transactions. Whether you need to send or <br>
-      receive Cryptocurrency or digital currencies, our expertise ensures smooth and secure transactions. <br>
-      With our user friendly platform, you can easily manage your payments and enjoy hassle free trnsactions.</p>
+        receive Cryptocurrency or digital currencies, our expertise ensures smooth and secure transactions. <br>
+        With our user friendly platform, you can easily manage your payments and enjoy hassle free trnsactions.</p>
 
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 ">
           <div class="card">
-            <div class="card-body">
+            <div class=" img-div">
               <img src="assets/images/prototyping-process/pana.png" alt="" class="img-fluid" srcset="">
-
             </div>
           </div>
           <h5>
@@ -258,8 +434,8 @@
         </div>
         <div class="col-md-4 ">
           <div class="card">
-            <div class="card-body">
-            <img src="assets/images/Frame 31.png" alt="" class="img-fluid" srcset="">
+            <div class=" img-div">
+              <img src="assets/images/Frame 31.png" alt="" class="img-fluid" srcset="">
 
             </div>
           </div>
@@ -273,8 +449,8 @@
         </div>
         <div class="col-md-4">
           <div class="card">
-            <div class="card-body">
-            <img src="assets/images/cash-payment/pana.png" alt="" class="img-fluid" srcset="">
+            <div class=" img-div">
+              <img src="assets/images/cash-payment/pana.png" alt="" class="img-fluid" srcset="">
 
             </div>
           </div>
@@ -289,192 +465,192 @@
       </div>
     </section>
 
-    
+
     <section id="carouselExample" class="testimonials-section carousel ">
-        <div class="carousel-inner">
-          <div class="testimonial-container carousel-item active">
-            <div class="star">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-            </div>
-            <p>
-              Since i was introduced to Proxchange, their services have been good and i have had
-              no negative experiences when working with them
-            </p>
-            <div class="sender-details row">
-              <div class="detail d-flex">
-                <h5>
-                  Maro Efenudu <br>
-                  Oghene Nicolas.
-                </h5>
-                <hr>
-                <img src="assets/images/Proxchange ps file original 1.png" alt="" srcset="">
-              </div>
-            </div>
+      <div class="carousel-inner">
+        <div class="testimonial-container carousel-item active">
+          <div class="star">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
           </div>
-      
-          <div class="testimonial-container carousel-item">
-            <div class="star">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-            </div>
-            <p>
-              I recently had the opportunity to use Proxchange, my experience was notably positive.
-              They offer top service and very active customer support that is available 24/7. i am loyal
-              to Proxchange because the brand always met my demands and even exceeded them.
-            </p>
-            <div class="sender-details row">
-              <div class="detail d-flex">
-                <h5>
-                  Chizi <br>
-                  Ogbonda.
-                </h5>
-                <hr>
-                <img src="assets/images/Proxchange ps file original 1.png" alt="" srcset="">
-              </div>
-            </div>
-          </div>
-      
-          <div class="testimonial-container carousel-item">
-            <div class="star">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-            </div>
-            <p>
-              So far, Proxchange is 100 percent for me. They give me what i want and timely too.
-              I have not had any unresolved issues. Every complaint was handled professionally.
-            </p>
-            <div class="sender-details row">
-              <div class="detail d-flex">
-                <h5>
-                  Maro Efenudu <br>
-                  Oghene Nicolas.
-                </h5>
-                <hr>
-                <img src="assets/images/Proxchange ps file original 1.png" alt="" srcset="">
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-container carousel-item">
-            <div class="star">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-            </div>
-            <p>
-              I have a YouTube channel where i provide GSM software solutions and sell premium files there.
-              Also i used a colleague’s PayPal to receive funds. But the challenge i had was that my colleague
-              refused to send my money. I got introduced to Proxchange and they have been reliable, no issues
-              so far. I will continue using Proxchange.
-            </p>
-            <div class="sender-details row">
-              <div class="detail d-flex">
-                <h5>
-                  Godknows. <br>
-                </h5>
-                <hr>
-                <img src="assets/images/Proxchange ps file original 1.png" alt="" srcset="">
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-container carousel-item">
-            <div class="star">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-            </div>
-            <p>
-            Proxchange has been reliable to me, the speed in replying messages is second to none. For me,
-            i think whoever wants to transact with them should have no atom of fear, just give them a try.
-            i have not had any unresolved issues, though sometimes network might make it look as if they
-            are delaying but in the end, both parties smile.
-            </p>
-            <div class="sender-details row">
-              <div class="detail d-flex">
-                <h5>
-                  Emmanuel <br>
-                  A.
-                </h5>
-                <hr>
-                <img src="assets/images/Proxchange ps file original 1.png" alt="" srcset="">
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-container carousel-item">
-            <div class="star">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-            </div>
-            <p>
-              Proxchange’s services are excellent and reliable. If i had my way, i would encourage everybody
-              to transact with Proxchange than any regular bank in Nigeria as long as the digital financial
-              transaction is concerned. I had and issues once and it was resolved in no time.
-            </p>
-            <div class="sender-details row">
-              <div class="detail d-flex">
-                <h5>
-                  Chibuike <br>
-                  Achonwa.
-                </h5>
-                <hr>
-                <img src="assets/images/Proxchange ps file original 1.png" alt="" srcset="">
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-container carousel-item">
-            <div class="star">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-              <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
-            </div>
-            <p>
-              Proxchange’s services are very good, consistent and relatively fast. Although the payout
-              time could be quicker, they deliver without fail. i have had no issues and you should give
-              Proxchange a try.
-            </p>
-            <div class="sender-details row">
-              <div class="detail d-flex">
-                <h5>
-                  Maro Efenudu <br>
-                  Oghene Nicolas.
-                </h5>
-                <hr>
-                <img src="assets/images/Proxchange ps file original 1.png" alt="" srcset="">
-              </div>
+          <p>
+            Since i was introduced to Proxchange, their services have been good and i have had
+            no negative experiences when working with them
+          </p>
+          <div class="sender-details row">
+            <div class="detail d-flex">
+              <h5>
+                Maro Efenudu <br>
+                Oghene Nicolas.
+              </h5>
+              <hr>
+              <img src="assets/images/Proxchange ps file original 1.png" alt="" srcset="">
             </div>
           </div>
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="testimonial-container carousel-item">
+          <div class="star">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+          </div>
+          <p>
+            I recently had the opportunity to use Proxchange, my experience was notably positive.
+            They offer top service and very active customer support that is available 24/7. i am loyal
+            to Proxchange because the brand always met my demands and even exceeded them.
+          </p>
+          <div class="sender-details row">
+            <div class="detail d-flex">
+              <h5>
+                Chizi <br>
+                Ogbonda.
+              </h5>
+              <hr>
+              <img src="assets/images/Proxchange ps file original 1.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-container carousel-item">
+          <div class="star">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+          </div>
+          <p>
+            So far, Proxchange is 100 percent for me. They give me what i want and timely too.
+            I have not had any unresolved issues. Every complaint was handled professionally.
+          </p>
+          <div class="sender-details row">
+            <div class="detail d-flex">
+              <h5>
+                Maro Efenudu <br>
+                Oghene Nicolas.
+              </h5>
+              <hr>
+              <img src="assets/images/Proxchange ps file original 1.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-container carousel-item">
+          <div class="star">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+          </div>
+          <p>
+            I have a YouTube channel where i provide GSM software solutions and sell premium files there.
+            Also i used a colleague’s PayPal to receive funds. But the challenge i had was that my colleague
+            refused to send my money. I got introduced to Proxchange and they have been reliable, no issues
+            so far. I will continue using Proxchange.
+          </p>
+          <div class="sender-details row">
+            <div class="detail d-flex">
+              <h5>
+                Godknows. <br>
+              </h5>
+              <hr>
+              <img src="assets/images/Proxchange ps file original 1.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-container carousel-item">
+          <div class="star">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+          </div>
+          <p>
+            Proxchange has been reliable to me, the speed in replying messages is second to none. For me,
+            i think whoever wants to transact with them should have no atom of fear, just give them a try.
+            i have not had any unresolved issues, though sometimes network might make it look as if they
+            are delaying but in the end, both parties smile.
+          </p>
+          <div class="sender-details row">
+            <div class="detail d-flex">
+              <h5>
+                Emmanuel <br>
+                A.
+              </h5>
+              <hr>
+              <img src="assets/images/Proxchange ps file original 1.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-container carousel-item">
+          <div class="star">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+          </div>
+          <p>
+            Proxchange’s services are excellent and reliable. If i had my way, i would encourage everybody
+            to transact with Proxchange than any regular bank in Nigeria as long as the digital financial
+            transaction is concerned. I had and issues once and it was resolved in no time.
+          </p>
+          <div class="sender-details row">
+            <div class="detail d-flex">
+              <h5>
+                Chibuike <br>
+                Achonwa.
+              </h5>
+              <hr>
+              <img src="assets/images/Proxchange ps file original 1.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-container carousel-item">
+          <div class="star">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+            <img src="assets/images/vuesax/linear/star.png" alt="" srcset="">
+          </div>
+          <p>
+            Proxchange’s services are very good, consistent and relatively fast. Although the payout
+            time could be quicker, they deliver without fail. i have had no issues and you should give
+            Proxchange a try.
+          </p>
+          <div class="sender-details row">
+            <div class="detail d-flex">
+              <h5>
+                Maro Efenudu <br>
+                Oghene Nicolas.
+              </h5>
+              <hr>
+              <img src="assets/images/Proxchange ps file original 1.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </section>
 
     <section class="contacts ">
@@ -518,7 +694,7 @@
           <div class="col-md-4">
             <h5> Services </h5>
             <p>Buy and selling of
-            Cryptocurrency</p>
+              Cryptocurrency</p>
             <p>Digital Currency</p>
             <p>Web Payment</p>
           </div>
@@ -547,15 +723,17 @@
         </div>
       </div>
       <hr>
-      
+
     </footer>
 
     <script src="assets/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/actions.js"></script>
+
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js">
+    </script>
 
   </body>
 
