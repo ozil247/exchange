@@ -171,6 +171,7 @@ ul {
   padding: 20px;
 }
 
+
 .user-dashboard .card .left,
 .user-dashboard .card .right {
   display: grid;
@@ -196,9 +197,17 @@ ul {
   padding: 25px;
 }
 
-.user-dashboard .col-md-6{
+.user-dashboard .col-md-6 .card{
   height: 218px;
   cursor: pointer;
+}
+
+.user-dashboard .col-md-6 .card .card{
+  position: absolute;
+  z-index: 1000;
+  top: 0; left: 50%;
+  width: 563px; height: 25em;
+  animation: animateLiCard;
 }
 
 .user-dashboard .card.perfect-money {
@@ -210,6 +219,13 @@ ul {
 .user-dashboard .card.exchange{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-dashboard .card .exchange img{
+  width: 20px;
+  height: 10px;
 }
 .user-dashboard .col-12 .card {
   display: flex !important;
@@ -1689,5 +1705,20 @@ footer .col-md-2 {
 @media (orientation: landscape) and (max-height: 500px) {
   .showcase-area {
     height: 50vmax;
+  }
+}
+
+@keyframes animateLiCard {
+  0% {
+    top: 200%;
+    display: none;
+  }
+
+  50% {
+    top: -200%;
+  }
+
+  100% {
+    top: 100%;
   }
 }
