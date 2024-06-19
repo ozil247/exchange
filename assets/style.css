@@ -188,6 +188,18 @@ ul {
   border: none;
 }
 
+.user-dashboard .col-md-6 .card .card {
+  position: absolute;
+  z-index: 1000;
+  width: 563px;
+  height: 25em;
+  left: auto;
+  right: auto;
+  top: 0;
+  bottom: auto;
+  margin: 20%;
+  animation: animateLiCard;
+}
 .user-dashboard .card .accordion-card{
   display: flex;
   flex-direction: column;
@@ -220,13 +232,7 @@ ul {
   cursor: pointer;
 }
 
-.user-dashboard .col-md-6 .card .card{
-  position: absolute;
-  z-index: 1000;
-  width: 563px; height: 25em;
-  margin: 20%;
-  animation: animateLiCard;
-}
+
 
 .accordion-flush{
   width: 100%;
@@ -890,12 +896,12 @@ li {
 .perfect-transactions .small-card {
   position: relative;
   box-shadow: 5px rgba(0, 0, 0, .4);
-
+  /* perspective: 3000px; */
 }
 
 .perfect-transactions .small-card>* {
   position: absolute;
-  background: transparent;
+  background: #fff;
   border: none;
   /* overflow: hidden; */
 }
@@ -946,7 +952,6 @@ li {
   align-items: center;
   justify-content: center;
 }
-
 .transactions-card .li-card {
   position: absolute;
   height: auto;
@@ -962,6 +967,7 @@ li {
   z-index: 1000;
   border: 1px solid inherit;
   border-radius: 10px;
+  perspective: 1000px;
 }
 
 .transactions-card .li-card.active {
@@ -1005,7 +1011,7 @@ details {
 
 .transactions-card .left .card.back {
   transform: rotateY(90deg) translateX(100%);
-  transform-origin: left;
+  transform-origin: right;
   transition: .5s ease-in-out;
 }
 
@@ -1620,17 +1626,16 @@ footer .col-md-2 {
     display: none;
   }
 
+  .hero-wrapper.container {
+    padding: 0;
+  }
   .admin button,
   .btn-primary-outline {
     width: auto;
     height: auto;
   }
 
-  /* #admin-btn{
-    position: absolute;
-    top: 0;
-    left: 0;
-  } */
+ 
   .admin-section-flex {
     display: flex;
     flex-direction: column;
@@ -1730,6 +1735,11 @@ footer .col-md-2 {
     font-weight: 500;
   }
 
+  .admin-section-flex .main-content,
+  .user-details-header {
+    padding: 5px 10px !important;
+  }
+
   .register {
     height: 100vh !important;
     display: flex !important;
@@ -1741,7 +1751,17 @@ footer .col-md-2 {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width:1200px) {
+  .register{
+    height: 100vh;
+  }
+
+  .admin .side-bar,
+  .admin .main-content{
+    height: 100vh;
+  }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
   .img-container h3 {
     font-size: 1.5rem;
   }
@@ -1754,6 +1774,15 @@ footer .col-md-2 {
     height: 100vh !important;
   }
 
+  .admin-section-flex .main-content,
+  .user-details-header {
+    padding: 10px;
+  }    
+
+  .admin-section-flex .main-content #admin-blog {
+    display: flex;
+    flex-direction: column;
+  }
   .admin-section-flex .side-bar {
     height: 100%;
   }
