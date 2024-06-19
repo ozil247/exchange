@@ -1207,11 +1207,19 @@ footer .col-md-2 {
   margin: 20px 0;
 }
 
-.register .btn-input a {
+.register .hero-wrapper.container{
+  padding: 0;
+}
+
+.register .btn-input .button{
   width: 70%;
   text-align: center;
+  border-radius: 5px ;
   background: #000;
   color: #DBA925 !important;
+    border: 1px solid #DBA925 !important;
+    padding: 5px;
+
 }
 
 .register a {
