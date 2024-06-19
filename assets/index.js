@@ -1,15 +1,19 @@
- window.onload = function () {
-   const navLink = document.getElementsByTagName('.navbar .menu-items li a');
-   navLink.on('click', function (event) {
-     navLink.classList.toggle('active'); // Remove 'active' class from all links
-     console.log(link);
-   });
+const initApp = async () => {
+  const navLinks = document.querySelectorAll('.menu-items li a, .user-assets li a');
+  navLinks.forEach(navLink => { navLink.addEventListener('click', changeNavLinkColor) });
 
- }
+  const myCarouselElement = document.querySelector('#carouselExample')
+
+  const carousel = new bootstrap.Carousel(myCarouselElement, {
+    interval: 2000,
+    touch: true
+  });
+}
+  
+
+document.addEventListener('DOMContentLoaded', initApp);
+
   window.onload = function () {
-    //   document.write(
-//    //     unescape("%3Cscript src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' type='text/javascript'%3E%3C/script%3E")
-//    // );
 
     $(document).ready(function () {
       // Add smooth scrolling to all links
@@ -38,12 +42,13 @@
 
     });
 
-   const myCarouselElement = document.querySelector('#carouselExample')
-
-    const carousel = new bootstrap.Carousel(myCarouselElement, {
-      interval: 2000,
-      touch: false
-    });
+   
 
 
+}
+ 
+const changeNavLinkColor = (e) => {
+  e.preventDefault();
+  console.log(e);
+  e.target.classList.toggle('active');
  }

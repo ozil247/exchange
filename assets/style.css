@@ -419,6 +419,25 @@ span {
   justify-content: center;
 }
 
+.admin .contacts .row .col-md-10
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.admin .contacts form > div *{
+  margin: 10px 0;
+  border: #DBA925 1px solid;
+}
+
+.admin .contacts form input::placeholder,
+.admin .contacts form textarea::placeholder,
+.admin h2, .admin h5 {
+  color: #DBA925;
+}
+
+
 .contacts .col-md-3 {
   display: flex;
   flex-direction: column;
@@ -430,7 +449,6 @@ section {
   align-content: center !important;
   justify-content: center !important;
   background: #f5f5f7;
-  /* height: 900px; */
 }
 
 .hero-wrapper {
@@ -638,6 +656,10 @@ h2 {
   transition: 3ms all ease-in-out;
 }
 
+button, input::placeholder, textarea::placeholder{
+  font-size: x-small !important;
+}
+
 .admin #offCanvasBtn {
   position: absolute;
   /* z-index: ; */
@@ -710,11 +732,11 @@ h2 {
   left: 0;
   padding: 50px 0 0 0;
   background: #000;
-  border-right: 5px solid #DBA925;
+  border-right: 2px solid #DBA925;
 }
 
 .admin-section-flex .main-content {
-  padding: 40px;
+  padding: 10px;
   position: relative;
   width: 100%;
 }
@@ -1560,8 +1582,11 @@ footer .col-md-2 {
     font-weight: 500;
   }
 
+  .user-assets li:active,
   .navbar .menu-items li:active {
     background: #DBA925;
+    border-radius: 5px;
+    padding: 5px;
     color: white;
     /* border-radi: 50%; */
   }
@@ -1764,10 +1789,6 @@ footer .col-md-2 {
     height: 100vh;
   }
 
-  .admin .side-bar,
-  .admin .main-content{
-    height: 100vh;
-  }
 }
 @media (min-width: 767px) and (max-width: 1200px) {
   .img-container h3 {
