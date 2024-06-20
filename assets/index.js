@@ -1,4 +1,4 @@
-const initApp = async () => {
+const initializeApp = async () => {
   const navLinks = document.querySelectorAll('.menu-items li a, .user-assets li a');
   navLinks.forEach(navLink => { navLink.addEventListener('click', changeNavLinkColor) });
 
@@ -11,7 +11,7 @@ const initApp = async () => {
 }
   
 
-document.addEventListener('DOMContentLoaded', initApp);
+document.addEventListener('DOMContentLoaded', initializeApp);
 
   window.onload = function () {
 

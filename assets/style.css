@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 ::root {
   --root-color: #DBA925;
@@ -18,9 +19,11 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   text-align: justify;
   text-justify: auto;
+  font-weight: bold;
+  font-size: medium !important;
 }
 
 /* ///////////..utility classes../////////// */
@@ -44,15 +47,31 @@ a {
 .transactions-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  column-gap: 15px;
+  row-gap: 50px;
+}
+
+p{
+  line-height: auto;
+  font-size: 17px;
+}
+
+.perfect-transactions .row > *{
+padding: 40px;
 }
 
 .perfect-transactions img {
-  width: 400px;
-  height: auto;
+  width: 344px;
   border-radius: 10px;
-  border: 1px #DBA925 solid;
   object-fit: cover;
+}
+
+.perfect-transactions .transaction-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
 }
 
 .btn {
@@ -67,20 +86,23 @@ a {
   font-weight: small;
 }
 
+.main-hero{
+  height: 100vh !important;
+}
 .effort {
   height: 500px;
 }
 
 .effort .hero-text {
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: auto;
+  margin: 0 !important;
 }
 
 .effort .effort-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 1px solid #DBA925;
   border-radius: 10px;
 }
 
@@ -132,8 +154,8 @@ ul {
 .btn-primary-outline {
   background: none;
   text-decoration: none;
-  color: #F2D641;
-  border: #F2D641 2px solid !important;
+  color: #DBA925;
+  border: #DBA925 2px solid !important;
   margin-right: 10px;
   border-radius: 5px;
   padding: 0.5em 1.5em;
@@ -307,7 +329,7 @@ ul {
 
 .btn-primary {
   color: #fff;
-  background: #F2D641;
+  background: #DBA925;
   text-decoration: none;
   border-radius: 5px;
   width: 132px;
@@ -316,12 +338,12 @@ ul {
 }
 
 .btn-primary:hover {
-  border: #F2D641 2px solid;
+  border: #DBA925 2px solid;
   transition: background 0.3s ease-in-out;
 }
 
 span {
-  border-bottom: 5px solid #F2D641;
+  border-bottom: 5px solid #DBA925;
   /* border-radius: 50%; */
 }
 
@@ -351,9 +373,16 @@ span {
 
 .navbar-container {
   display: flex;
+  position: relative;
   justify-content: space-around;
   height: 100px;
   align-items: flex-start;
+}
+
+.navbar .logo{
+  position: relative;
+  top: 10%;
+  width: 30px !important;
 }
 
 .navbar>.container,
@@ -402,6 +431,7 @@ span {
 
 .hero-paragraph {
   margin: 10px 0;
+  line-height: auto;
 }
 
 .contacts {
@@ -455,6 +485,10 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
+ 
+.hero-text > *, .hero-img .effortless> *{
+  margin: 40px 0;
+}
 
 .hero-text {
   display: flex;
@@ -471,8 +505,8 @@ h2 {
   font-weight: bold;
 }
 
-.effortless li,
-.hero p {
+.effortless li
+{
   font-size: 20px;
   /* font-weight: bold; */
   align-items: left;
@@ -499,7 +533,7 @@ h2 {
 
 .perfect-transactions .transaction-text img{
   width: 100% !important;
-  height: auto;
+  height: 277px;
 }
 
 .about-page .hero {
@@ -883,9 +917,10 @@ li {
 .services-we-offer .card {
   height: 530px;
   /* gap: 2rem; */
-  width: 300px;
+  width: 400px;
   margin: 25px;
   border: 1px solid #DBA925;
+  text-align: center;
 }
 
 
@@ -1187,7 +1222,7 @@ footer .col-md-2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: 5s ease-in-out;
+  transition: transform .5s ease-in-out;
   scroll-snap-align: start !important;
 }
 
@@ -1201,7 +1236,15 @@ footer .col-md-2 {
 
 .register{
   background: #000;
+}
 
+.hero .first-hero{
+  position: relative;
+}
+
+.hero .first-image{
+  position: relative;
+  top: -25%;
 }
 
 .register .hero-wrapper.container {
@@ -1394,6 +1437,9 @@ footer .col-md-2 {
     ;
   }
 
+  .hero .first-image{
+    top:0;
+  }
   .btn-primary,
   .btn-primary-outline {
     width: auto;
@@ -1482,6 +1528,7 @@ footer .col-md-2 {
 
   .user-container {
     display: flex;
+
   }
 
   .user-container .user-menu-items {
@@ -1639,9 +1686,18 @@ footer .col-md-2 {
     font-size: 65%;
   }
 
+  section {
+    padding: 0 20px !important;
+  }
   .navbar .menu-items li {
     font-size: 1.6rem;
   }
+
+  .navbar-container .logo{
+    position: static;
+    right: 0;
+  }
+
 
   .detail h5 {
     border-right: #fff 4px solid;
@@ -1731,7 +1787,8 @@ footer .col-md-2 {
   }
 
   .transactions-card .small-card{
-    width: 100%;
+    width: 341px;
+    height: 290px;
     display: flex;
     flex-direction: column;
   }
@@ -1816,12 +1873,11 @@ footer .col-md-2 {
     height: 100%;
   }
 
-  .transactions-card .small-card {
+  /* .transactions-card .small-card {
     width: 190px !important;
     height: 190px;
     padding: 30px 10px;
-
-  }
+  } */
 }
 
 @media (orientation: landscape) and (max-height: 500px) {
