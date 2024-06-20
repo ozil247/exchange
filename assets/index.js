@@ -48,7 +48,6 @@ document.addEventListener('DOMContentLoaded', initializeApp);
 }
  
 const changeNavLinkColor = (e) => {
-  e.preventDefault();
   console.log(e);
   e.target.classList.toggle('active');
  }

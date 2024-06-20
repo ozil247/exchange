@@ -151,27 +151,31 @@
       </div>
 
       <div class="main-content">
-        <div class="hero-wrapper container">
-          <button class="btn-primary-outline admin-btn" id="admin-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-            </svg>
-          </button>
-          <div class="my-4">
-            <h3> Add Blog </h3>
-            <form action="#">
-              <textarea name="" id="" class="form-control" cols="100%" placeholder="Input Message" rows="10"></textarea>
-              <div class="blog-img-upload">
-                <input type="file" class="form-control admin-file" placeholder="Upload Image">
-                <h5> Upload Picture </h5>
-              </div>
-              <div class="submit-button">
-                <a href="#" class="btn-primary"> Add Post </a>
-              </div>
-            </form>
-          </div>
+        <button class="btn-primary-outline admin-btn" id="admin-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+          </svg>
+        </button>
+
+        <div class="review padding">
+
+            <div class="reuseable-form">
+              <form action="#">
+                 <h3 class="form-header">Add Blog </h3>
+                <textarea name="" id="" class="form-control big-input-field reuseable-input-field" placeholder="Input Message" rows="10"></textarea>
+                <textarea name="" id="" class="form-control small-input-field reuseable-input-field" placeholder="Input Message" rows="10"></textarea>
+
+                <div class="blog-img-upload big-input-field reuseable-input-field">
+                  <input type="file" class="form-control admin-file" placeholder="Upload Image">
+                  <p> Upload Picture </p>
+                </div>
+                <div class="submit-button">
+                  <a href="#" class="btn-primary"> Add Post </a>
+                </div>
+              </form>
+            </div>
         </div>
       </div>
     </section>

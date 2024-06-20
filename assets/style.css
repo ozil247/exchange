@@ -44,11 +44,15 @@ a {
   justify-content: center;
 }
 
+.faqs .faq{
+  border-bottom: 2px solid #DBA925;
+}
+
 .transactions-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 15px;
-  row-gap: 50px;
+  row-gap: 30px;
 }
 
 p{
@@ -61,7 +65,8 @@ padding: 40px;
 }
 
 .perfect-transactions img {
-  width: 344px;
+  width: 504px;
+  height: 377px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -90,9 +95,13 @@ padding: 40px;
   height: 100vh !important;
 }
 .effort {
-  height: 500px;
+  height: 835px;
 }
 
+.effort .hero-wrapper .row{
+  display: flex;
+  justify-content: flex-end;
+}
 .effort .hero-text {
   width: 450px;
   height: auto;
@@ -100,11 +109,12 @@ padding: 40px;
 }
 
 .effort .effort-img {
-  width: 100%;
-  height: 100%;
+  width: 585px;
+  height: 552px;
   object-fit: cover;
   border-radius: 10px;
 }
+
 
 ul {
   list-style: none;
@@ -130,6 +140,12 @@ ul {
 .user-container .logo {
   position: absolute;
   left: 0;
+}
+
+.effortless{
+  display: flex;
+  flex-direction: column;
+  justify-content: ;
 }
 
 .effortless ul li,
@@ -382,6 +398,7 @@ span {
 .navbar .logo{
   position: relative;
   top: 10%;
+  left: 0;
   width: 30px !important;
 }
 
@@ -447,6 +464,28 @@ span {
   height: auto !important;
   display: flex;
   justify-content: center;
+}
+
+.reuseable-form{
+  padding: 0 10px;
+}
+.reuseable-form form .big-input-field{
+  margin: 10px 0!important;
+  border: 1px #DBA925 solid;
+  width: 100%;
+  height: 241px;
+}
+
+.reuseable-form .submit-button, .reuseable-form .form-header{
+  border: none !important;
+}
+
+.reuseable-form input::placeholder, .reuseable-form textarea::placeholder{
+  color: #DBA925;
+}
+.reuseable-form .form-header{
+  color: #DBA925;
+  height: auto !important;
 }
 
 .admin .contacts .row .col-md-10
@@ -532,7 +571,7 @@ h2 {
 }
 
 .perfect-transactions .transaction-text img{
-  width: 100% !important;
+  width: 504px !important;
   height: 277px;
 }
 
@@ -567,7 +606,6 @@ h2 {
 
 .admin .about-us-page>*,
 .blog-img-upload {
-  border: 1px #DBA925 solid;
   border-radius: 10px;
   height: 164px;
   margin-bottom: 20px;
@@ -575,6 +613,13 @@ h2 {
   padding: 0 20px;
   align-items: center;
   justify-content: space-between;
+}
+
+.blog-img-upload p{
+  position: absolute;
+  font-size: smaller;
+  color: #DBA925;
+  top: 0;
 }
 
 .blog-img-upload {
@@ -1000,8 +1045,8 @@ li {
 }
 
 .transactions-card div {
-  height: 190px;
-  width: 100% !important;
+  height: 290px;
+  width: 341px;
   padding: 10px 0;
   position: relative;
   display: flex;
@@ -1009,14 +1054,16 @@ li {
   align-items: center;
   justify-content: center;
 }
+
 .transactions-card .li-card {
   position: absolute;
-  height: auto;
-  width: 600px;
+  height: 400px;
+  left: -50%;
+  width: 339px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center !important;
+  align-items: center !important;
   padding: 5px;
   background: #fff;
   font-size: small;
@@ -1025,6 +1072,10 @@ li {
   border: 1px solid inherit;
   border-radius: 10px;
   perspective: 1000px;
+}
+
+.transactions-card .li-card > *{
+  text-align: center;
 }
 
 .transactions-card .li-card.active {
@@ -1070,12 +1121,15 @@ details {
   transform: rotateY(90deg) translateX(100%);
   transform-origin: right;
   transition: .5s ease-in-out;
+  overflow: hidden;
 }
 
 .transactions-card .right .card.back {
   transform: rotateY(-90deg) translateX(-100%);
   transform-origin: left;
   transition: .5s ease-in-out;
+  overflow: hidden;
+
 }
 
 .transactions-card .left .card.front.active {
@@ -1204,11 +1258,29 @@ footer .icons i {
   height: 30px;
 }
 
+footer a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 5px 0;
+}
+
+footer .col-md-4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 footer .col-md-2 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+footer .col-md-2 a{
+  text-align: right;
 }
 
 .carousel-inner {
@@ -1218,7 +1290,7 @@ footer .col-md-2 {
 
 .testimonial-container.carousel-item.active {
   display: flex !important;
-  height: 90vh;
+  height: 549px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1351,7 +1423,8 @@ footer .col-md-2 {
 
 .testimonials-section {
   background: #000000;
-
+  opacity: .75;
+  color: #fff;
 }
 
 .testimonial-container {
@@ -1361,6 +1434,10 @@ footer .col-md-2 {
   align-items: center;
   font-size: 1.4rem;
   padding: 1rem;
+}
+
+.testimonial-container p{
+  text-align: center;
 }
 
 
@@ -1693,11 +1770,13 @@ footer .col-md-2 {
     font-size: 1.6rem;
   }
 
-  .navbar-container .logo{
-    position: static;
-    right: 0;
+  .navbar-container{
+    position: relative;
   }
-
+  .navbar-container .logo{
+    position: absolute;
+    right: 0 !important;
+  }
 
   .detail h5 {
     border-right: #fff 4px solid;
@@ -1787,8 +1866,8 @@ footer .col-md-2 {
   }
 
   .transactions-card .small-card{
-    width: 341px;
-    height: 290px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -1804,8 +1883,10 @@ footer .col-md-2 {
     height: 300px;
   }
 
+
+
   .made .col-md-4{
-        width: 100%;
+    width: 100%;
   }
 
   .made .col-md-4 .card .img-fluid {
