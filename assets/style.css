@@ -390,7 +390,7 @@ span {
 .navbar-container {
   display: flex;
   position: relative;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 100px;
   align-items: flex-start;
 }
@@ -469,11 +469,31 @@ span {
 .reuseable-form{
   padding: 0 10px;
 }
+
+.reuseable-input-group{
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 10px;
+}
+
+.reuseable-input-field{
+  border: 1px #DBA925 solid !important;
+  margin: 10px 0 !important;
+
+}
+
+input[type = 'checkbox']{
+ accent-color: #DBA925;
+ color: white;
+}
 .reuseable-form form .big-input-field{
-  margin: 10px 0!important;
-  border: 1px #DBA925 solid;
   width: 100%;
   height: 241px;
+}
+
+.reuseable-form form .small-input-field {
+  width: 100%;
+  height: 100px;
 }
 
 .reuseable-form .submit-button, .reuseable-form .form-header{
@@ -495,7 +515,7 @@ span {
   gap: 20px;
 }
 
-.admin .contacts form > div *{
+/* .admin .contacts form > div *{
   margin: 10px 0;
   border: #DBA925 1px solid;
 }
@@ -504,7 +524,7 @@ span {
 .admin .contacts form textarea::placeholder,
 .admin h2, .admin h5 {
   color: #DBA925;
-}
+} */
 
 
 .contacts .col-md-3 {
@@ -642,6 +662,7 @@ h2 {
   grid-template-columns: 1fr 1fr;
   height: 190px;
   margin: 40px 0;
+  border: 1px solid #DBA925;
 }
 
 .admin .review .review-card .grid-1 {
@@ -718,11 +739,8 @@ h2 {
 }
 
 .admin .navbar .logo {
-  z-index: -1;
-}
-
-.admin .navbar .logo img {
-  overflow: hidden;
+  position: absolute;
+  top: 0;
 }
 
 .admin section {
@@ -812,6 +830,8 @@ button, input::placeholder, textarea::placeholder{
   padding: 50px 0 0 0;
   background: #000;
   border-right: 2px solid #DBA925;
+  position: relative;
+  z-index: 100;
 }
 
 .admin-section-flex .main-content {
@@ -960,7 +980,7 @@ li {
 }
 
 .services-we-offer .card {
-  height: 530px;
+  height: 630px;
   /* gap: 2rem; */
   width: 400px;
   margin: 25px;
@@ -1382,12 +1402,6 @@ footer .col-md-2 a{
   color: #DBA925;
 }
 
-.contact-page form div {
-  /* display: flex; */
-  /* flex-direction: column; */
-  margin-bottom: 24px;
-}
-
 .contact-page input,
 .contact-page textarea {
   border: 1px solid #DBA925;
@@ -1688,8 +1702,8 @@ footer .col-md-2 a{
 
   .navbar .menu-items {
     padding-top: 70px;
-    background: #fff;
-    height: 100vh;
+    background: #000;
+    height: 200vh;
     max-width: 350px;
     transform: translate(-200%);
     display: flex;
@@ -1706,6 +1720,7 @@ footer .col-md-2 a{
     font-weight: 500;
   }
 
+
   .user-assets li:active,
   .navbar .menu-items li:active {
     background: #DBA925;
@@ -1714,6 +1729,8 @@ footer .col-md-2 a{
     color: white;
     /* border-radi: 50%; */
   }
+
+  
 
   .logo {
     position: absolute;
@@ -1770,14 +1787,23 @@ footer .col-md-2 a{
     font-size: 1.6rem;
   }
 
+  .navbar .menu-items li a {
+    color: #DBA925 !important;
+  }
+
   .navbar-container{
     position: relative;
   }
   .navbar-container .logo{
-    position: absolute;
-    right: 0 !important;
+            position: absolute;
+            right: 0vw !important;
+            left: 40%;
+            bottom: 10% !important;
   }
 
+  .admin .navbar .logo{
+    left: 0;
+  }
   .detail h5 {
     border-right: #fff 4px solid;
   }
