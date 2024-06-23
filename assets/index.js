@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', initializeApp);
 
        // Store hash
         var hash = this.hash;
-
+        console.log(this);
           // Using jQuery's animate() method to add smooth page scroll
          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $("html, body").animate({
@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', initializeApp);
 }
  
 const changeNavLinkColor = (e) => {
+  // e.preventDefault();
   console.log(e);
   e.target.classList.toggle('active');
  }
