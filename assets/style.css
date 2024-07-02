@@ -239,6 +239,7 @@ ul {
   height: 50vh;
   animation: animateLiCard;
 }
+
 .user-dashboard .card .accordion-card{
   position: relative;
   display: flex;
